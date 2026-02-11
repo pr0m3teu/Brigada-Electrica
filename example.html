@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Autorizat Iași | Smart Home & Reparații</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0A192F',    // Deep Navy
+                            cyan: '#00F0FF',    // Electric Cyan
+                            red: '#FF3333',     // Alert Red
+                            dark: '#020c1b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for nuances not covered by utilities */
+        body { scroll-behavior: smooth; }
+        
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-panel {
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Glitch effect for "Smart" text hover */
+        .smart-text:hover {
+            text-shadow: 2px 0 #00F0FF, -2px 0 #FF3333;
+        }
+
+        /* Mobile framing for TikTok section */
+        .phone-frame {
+            border: 8px solid #333;
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 9/16;
+            background: #000;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 hero-bg"></div>
+        <div class="absolute inset-0 bg-brand-navy/80"></div> <div class="relative z-10 container mx-auto px-6 text-center">
+            <h1 class="font-heading font-extrabold text-4xl md:text-6xl mb-6 leading-tight">
+                Electrician Autorizat Iași: <br>
+                <span class="text-brand-cyan">Reparații Rapide</span> & <span class="text-brand-cyan">Smart Home</span> <br>
+                <span class="italic text-3xl md:text-5xl font-light text-gray-300">Fără Șantier</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                Adu-ți apartamentul în secolul 21. Automatizăm iluminatul și prizele existente fără să spargem pereții și fără praf. Siguranță și confort la un buton distanță.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#packages" class="px-8 py-4 bg-brand-cyan text-brand-navy font-bold rounded-lg shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] hover:bg-white transition transform hover:-translate-y-1">
+                    Vreau o Casă Smart (Fără Găuri)
+                </a>
+                
+                <a href="tel:0700000000" class="group px-8 py-4 border-2 border-brand-red text-white font-bold rounded-lg hover:bg-brand-red transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone-volume group-hover:animate-pulse"></i>
+                    Ai o Urgență? Sună Acum
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="sticky top-0 z-50 bg-brand-navy text-white shadow-lg border-b border-gray-700">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-wrap justify-between md:justify-center md:gap-12 text-xs md:text-sm font-semibold text-center">
+                <div class="flex items-center gap-2 w-1/2 md:w-auto mb-2 md:mb-0 justify-center md:justify-start">
+                    <i class="fa-solid fa-shield-halved text-brand-cyan text-lg"></i> Autorizat ANRE
+                </div>
+                <div class="flex items-center gap-2 w-1/2 md:w-auto mb-2 md:mb-0 justify-center md:justify-start">
+                    <i class="fa-solid fa-map-location-dot text-brand-cyan text-lg"></i> Intervenții în tot Iașul
+                </div>
+                <div class="flex items-center gap-2 w-1/2 md:w-auto justify-center md:justify-start">
+                    <i class="fa-solid fa-clock text-brand-red text-lg"></i> Disponibil Non-Stop
+                </div>
+                <div class="flex items-center gap-2 w-1/2 md:w-auto justify-center md:justify-start">
+                    <i class="fa-solid fa-broom text-brand-cyan text-lg"></i> Garanția "Zero Praf"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-navy mb-4">
+                    Cum facem casa Smart fără să stricăm zugrăveala?
+                </h2>
+                <div class="w-24 h-1 bg-brand-cyan mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-0 md:gap-8 items-center max-w-5xl mx-auto bg-gray-50 rounded-2xl overflow-hidden shadow-xl">
+                
+                <div class="relative h-64 md:h-96 bg-gray-300 grayscale flex items-center justify-center overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60" alt="Construction mess">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10 text-center">
+                        <i class="fa-solid fa-circle-xmark text-6xl text-brand-red mb-2 bg-white rounded-full"></i>
+                        <h3 class="text-white font-bold text-xl uppercase tracking-widest">Șantier & Praf</h3>
+                    </div>
+                </div>
+
+                <div class="relative h-64 md:h-96 bg-gray-100 flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Clean smart home">
+                    <div class="absolute inset-0 bg-brand-navy/20"></div>
+                    <div class="relative z-10 text-center">
+                        <i class="fa-solid fa-circle-check text-6xl text-green-500 mb-2 bg-white rounded-full"></i>
+                        <h3 class="text-white font-bold text-xl uppercase tracking-widest drop-shadow-md">Curat & Smart</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto mt-12 text-center">
+                <p class="text-lg text-gray-600 mb-6">
+                    Majoritatea oamenilor cred că automatizarea necesită înlocuirea completă a instalației. <strong class="text-brand-red">Fals.</strong> 
+                    Folosim tehnologie de ultimă generație (relee wireless) care se montează invizibil în spatele întrerupătoarelor tale actuale.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-6 text-sm font-semibold">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Păstrezi designul actual</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Control din telefon/voce</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Montaj în 30 min/cameră</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center font-heading text-3xl font-bold text-brand-navy mb-16">Alege Pachetul Potrivit</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-brand-red hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-red-100 text-brand-red rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Reparații Electrice</h3>
+                    <p class="text-sm text-gray-500 mb-6">Pentru probleme care nu suportă amânare.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> Diagnosticare scurtcircuite</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> Schimbare tablou vechi</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-red mt-1"></i> Montaj prize/corpuri iluminat</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 text-center border border-brand-red text-brand-red font-bold rounded hover:bg-brand-red hover:text-white transition">Cere Intervenție</a>
+                </div>
+
+                <div class="bg-brand-navy text-white rounded-xl shadow-2xl p-8 transform md:-translate-y-4 border border-brand-cyan relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-brand-cyan text-brand-navy text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <div class="w-14 h-14 bg-brand-cyan/20 text-brand-cyan rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Smart Start</h3>
+                    <p class="text-sm text-gray-400 mb-6">Iluminat inteligent. Fără praf.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-cyan mt-1"></i> Control lumini telefon (iOS/Android)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-cyan mt-1"></i> Păstrarea întrerupătoarelor existente</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-cyan mt-1"></i> Scenarii automate ("Mod Cinema")</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 text-center bg-brand-cyan text-brand-navy font-bold rounded hover:bg-white transition">Vezi Preț Pachet</a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-brand-navy hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-navy rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-house-signal"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Casa Complet Automatizată</h3>
+                    <p class="text-sm text-gray-500 mb-6">Control total și economie de energie.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-navy mt-1"></i> Control Termostat + Lumini</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-navy mt-1"></i> Senzori inundație și fum</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-navy mt-1"></i> Comenzi vocale (Google/Alexa)</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 text-center border border-brand-navy text-brand-navy font-bold rounded hover:bg-brand-navy hover:text-white transition">Cere Ofertă</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-lg">
+                    <h2 class="font-heading text-3xl font-bold text-brand-navy mb-2">Vezi cum lucrăm: Transparență 100%</h2>
+                    <p class="text-gray-600">Urmărește-ne pe TikTok pentru sfaturi și exemple de lucrări din Iași.</p>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-brand-navy font-bold flex items-center gap-2 hover:text-brand-cyan transition">
+                    <i class="fa-brands fa-tiktok text-2xl"></i> Vezi Profilul Nostru &rarr;
+                </a>
+            </div>
+
+            <div class="flex overflow-x-auto pb-8 gap-6 no-scrollbar snap-x">
+                
+                <div class="snap-center shrink-0 w-64">
+                    <div class="phone-frame relative bg-gray-900 shadow-xl group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1769&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition" alt="Electric Panel">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-4xl opacity-80"></i>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm font-semibold text-center">"Cum arată un tablou electric periculos"</p>
+                </div>
+
+                <div class="snap-center shrink-0 w-64">
+                    <div class="phone-frame relative bg-gray-900 shadow-xl group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition" alt="Smart Home">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-4xl opacity-80"></i>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm font-semibold text-center">"Transformare Smart în Bucium"</p>
+                </div>
+
+                <div class="snap-center shrink-0 w-64">
+                    <div class="phone-frame relative bg-gray-900 shadow-xl group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?q=80&w=1770&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition" alt="Fuse Box">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-4xl opacity-80"></i>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm font-semibold text-center">"De ce sar siguranțele?"</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-navy py-16 text-white border-b border-gray-700">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <i class="fa-solid fa-quote-left text-brand-cyan text-4xl mb-6 opacity-50"></i>
+            <p class="text-xl md:text-2xl font-light italic mb-8">
+                "Am vrut să controlez luminile din telefon, dar mi-a fost frică de șantier pentru că tocmai renovasem. Băieții au montat totul în 2 ore, fără să facă niciun pic de mizerie. Recomand pentru profesionalism!"
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center font-bold">AP</div>
+                <div class="text-left">
+                    <p class="font-bold text-brand-cyan">Andrei P.</p>
+                    <p class="text-sm text-gray-400">Cartier Copou</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark pt-12 pb-6 text-gray-400 text-sm">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Electrician Iași</h4>
+                <p>Soluții electrice moderne, sigure și curate pentru casa ta.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Link-uri Rapide</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-brand-cyan transition">Acasă</a></li>
+                    <li><a href="#" class="hover:text-brand-cyan transition">Servicii</a></li>
+                    <li><a href="#" class="hover:text-brand-cyan transition">Despre Noi</a></li>
+                    <li><a href="#" class="hover:text-brand-cyan transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact</h4>
+                <p class="mb-2"><i class="fa-solid fa-phone mr-2"></i> 07xx xxx xxx</p>
+                <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> contact@electricianiasi.ro</p>
+                <a href="#" class="text-green-500 hover:text-green-400"><i class="fa-brands fa-whatsapp mr-1"></i> Scrie-ne pe WhatsApp</a>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Zona de Acoperire</h4>
+                <div class="w-full h-32 bg-gray-800 rounded flex items-center justify-center">
+                    <i class="fa-solid fa-map text-2xl"></i>
+                    <span class="ml-2">Iași & Zona Metropolitană</span>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-8 border-t border-gray-800 text-center flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2024 Electrician Iași. Toate drepturile rezervate.</p>
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Termeni și Condiții</a>
+                <a href="#" class="hover:text-white">ANPC</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
