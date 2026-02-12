@@ -2,7 +2,8 @@
 
 @theme {
     --color-main-blue: #0c1827;
-    --color-main-white: #fcfcfc;
+    --color-main-white: #F9FAFB;
     --color-secondary-blue: #2596be;
     --color-main-gray: #EFF1ED;
+    --color-secondary-gray: rgb(120, 136, 159);
 }
