@@ -22,13 +22,22 @@
         flex items-center justify-center
         cursor-pointer">
 
-        <img src="./assets/lighbulb.svg" alt="lightbulb icon">
+        <img src="./assets/lighbulb.svg" alt="lightbulb icon" class="w-6">
+        <span class="ml-1.5"> Vreau o casa smart </span>      
+      </button>
+
+      <button href="#" class="text-main-white bg-main-gold 
+        mx-auto mt-9 me-auto py-3.5 px-3.5 text-xl w-5/6 rounded-md 
+        flex items-center justify-center
+        cursor-pointer">
+
+        <img src="./assets/phone.png" alt="lightbulb icon" class="w-6">
         <span class="ml-1.5"> Vreau o casa smart </span>      
       </button>
     </section>
 
     <!-- Trust Section -->
-    <section class="bg-main-blue text-main-white flex justify-center-safe py-4">
+    <section class="bg-main-blue text-main-white flex justify-center-safe py-4 fixed sticky top-0 z-10">
       <div class="mx-3 text-md flex"> 
         <img src="./assets/shield.svg" alt="scut" class="mr-0.5">
         <span>Autorizat ANRE</span>
@@ -101,8 +110,11 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="p-5 rounded-lg shadow-xl border-2 border-secondary-blue grid grid-row-2">
-          <div>
+        <div class="p-5 rounded-lg shadow-xl border-2 border-secondary-blue grid grid-row-2 relative">
+          <div class="absolute top-0 right-0 bg-[#3d7aad] text-main-white px-4 py-1 text-sm rounded-bl-lg">
+                Cel mai popular
+          </div>
+          <div >
             <img src="assets/smart-light.png" alt="smart light" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
             <h3 class="text-3xl font-medium">Iluminat Inteligent</h3>
             <p class="text-xl text-secondary-gray mt-2">Ideal pentru dormitor sau living.</p>
