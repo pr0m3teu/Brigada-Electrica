@@ -2,10 +2,19 @@
 
 @theme {
     --color-main-blue: #0c1827;
-    --color-main-white: #F9FAFB;
     --color-secondary-blue: #2596be;
+    --color-light-blue: #AADCEE;
+
+    --color-main-white: #F9FAFB;
+    
     --color-main-gray: #EFF1ED;
     --color-secondary-gray: rgb(120, 136, 159);
+    
+    --color-main-gold: #81714B;
+    --color-secondary-gold: #C3B698;
+
+    --color-main-yellow: #ffcc00;
+    --color-secondary-yellow: #FFE270;
 }
 
 @keyframes fadeUp {
