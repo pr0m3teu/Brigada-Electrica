@@ -16,3 +16,14 @@
     --color-main-yellow: #ffcc00;
     --color-secondary-yellow: #FFE270;
 }
+
+@layer components {
+    .btn-primary {
+        @apply
+        transition-all duration-200 ease-out
+        hover:shadow-xl hover:shadow-blue-500/40
+        hover:-translate-y-0.5
+        active:translate-y-0
+        active:scale-[0.98]
+    }
+}

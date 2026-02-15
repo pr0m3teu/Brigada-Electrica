@@ -1,10 +1,18 @@
 import "./styles.css";
 
-let button = document.getElementById("hero-button1");
+let heroButton = document.getElementById("hero-button1");
+let serviciiLink = document.getElementById("servicii-link");
+
 let servicesSection = document.getElementById("servicii");
 
-button?.addEventListener("click", () => {
+heroButton?.addEventListener("click", () => {
     servicesSection?.scrollIntoView({
         behavior: "smooth"
     });
 });
+
+serviciiLink?.addEventListener("click", () => {
+    servicesSection?.scrollIntoView({
+        behavior: "smooth"
+    });
+})

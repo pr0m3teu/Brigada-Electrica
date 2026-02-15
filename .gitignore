@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 repomix-output.xml
+example.html
 
 # Editor directories and files
 .vscode/*
