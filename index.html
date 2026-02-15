@@ -30,7 +30,7 @@
           <span class="ml-1.5"> Vreau o casa smart </span>      
         </button>      
 
-        <button href="#" class="text-main-white bg-main-gold 
+        <button  class="text-main-white bg-main-gold 
           py-3.5 px-3.5 text-xl w-5/6 rounded-3xl 
           flex items-center justify-center
           cursor-pointer md:w-fit btn-primary">
@@ -80,11 +80,11 @@
     </main>
 
     <!-- Oferte servicii -->
-    <section class="pt-12 px-2 bg-main-white scroll-mt-16" id="servicii">
+    <section class="pt-12 px-2 bg-main-white scroll-mt-16 mb-16" id="servicii">
       <h2 class="text-4xl text-main-blue text-center font-medium">Servicii si pachete</h2>
       <p class="my-5 text-2xl text-center px-3">Alege soluția potrivită pentru nevoile tale</p>
 
-      <div class="grid grid-rows-3 gap-6 mb-3">
+      <div class="grid grid-rows-3 gap-6 lg:grid-cols-3 lg:grid-rows-1">
         <!-- CARD 1 -->
         <div class="p-5 rounded-lg shadow-xl grid grid-row-2">
           <div>
@@ -93,16 +93,16 @@
             <p class="text-xl text-secondary-gray mt-2">Pentru problemele ce nu suporta amanare.</p>
 
             <ul class="mt-4 ml-1">
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex my-1 items-center">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Diagnostica scurcircuite</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex my-1 items-center">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Schimbare tablou electric vechi</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex my-1 items-center">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Prize, întrerupătoare, corpuri de iluminat</p>
               </li>
             </ul>
@@ -126,16 +126,16 @@
             <p class="text-xl text-secondary-gray mt-2">Ideal pentru dormitor sau living.</p>
             
             <ul class="mt-4 ml-1">
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Control lumini din telefon (iOS / Android)</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Păstrezi întrerupătoarele existente</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Scenarii automate: Cinema, Noapte Bună</p>
               </li>
             </ul>
@@ -156,25 +156,25 @@
             <p class="text-xl text-secondary-gray mt-2">Control total + economie de energie.</p>
             
             <ul class="mt-4 ml-1">
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Lumini + termostat</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Senzori fum & inundație</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Control vocal (Google Home / Alexa)</p>
               </li>
-              <li class="flex my-1">
-                <img src="./assets/check.png" alt="bifa" class="w-5 mr-2">
+              <li class="flex  items-center my-1">
+                <img src="./assets/check.png" alt="bifa" class="w-5 h-5 mr-2">
                 <p>Buton „Stinge Tot" la plecare</p>
               </li>
             </ul>
           </div>
-          <button href="#" class="text-main-white bg-secondary-blue 
+          <button class="text-main-white bg-secondary-blue 
             mx-auto mt-6 self-center py-2.5 px-2.5 text-xl w-5/6 rounded-full 
             flex items-center justify-center btn-primary
             cursor-pointer">
@@ -183,6 +183,7 @@
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="px-2 py-5 mt-5 bg-main-blue">
       <h2 class="text-2xl font-semibold text-main-white">Brigada Electrică</h2>
@@ -208,11 +209,11 @@
       <ul class="text-main-white">
         <li class="mb-2 text-main-gray flex content-center">
           <img src="./assets/phone.png" alt="telefon" class="w-6">
-          <span class="text-md ml-1.5">0740 543 785</span>
+          <a href="tel:+40740543785" class="text-md ml-1.5">0740 543 785</a>
         </li>
 
         <li class="mb-2 text-main-gray flex content-center">
-          <img src="./assets/whatsapp.png" alt="e-mail" class="w-6">
+          <img src="./assets/whatsapp.png" alt="whatsapp" class="w-6">
           <a href="https://wa.me/40740543785" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
         </li>
 
