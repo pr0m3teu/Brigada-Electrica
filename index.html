@@ -349,44 +349,54 @@
     </section>
 
     <!-- Footer -->
-    <footer class="px-2 py-5 mt-5 bg-main-blue">
-      <h2 class="text-2xl font-semibold text-main-white">Brigada Electrică</h2>
-      <p class="text-main-gray my-3.5">Puterea Siguranței, Energia Viitorului</p>
+    <footer class="px-2 py-5 mt-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
+      <!-- Brigada Electrica -->
+      <div>
+        <h2 class="text-2xl font-semibold text-main-white">Brigada Electrică</h2>
+        <p class="text-main-gray my-3.5">Puterea Siguranței, Energia Viitorului</p>
 
-      <div class="flex content-center my-2">
-        <a href="https://www.facebook.com/brigadaelectrica">
-          <img src="./assets/facebook.png" alt="facebook " class="w-8 mr-1.5">
-        </a>
-        <a href="https://www.instagram.com/brigadaelectrica">
-          <img src="./assets/instagram.png" alt="instagram" class="w-8 mr-1.5">
-        </a>
+        <div class="flex content-center my-2">
+          <a href="https://www.facebook.com/brigadaelectrica">
+            <img src="./assets/facebook.png" alt="facebook " class="w-8 mr-1.5">
+          </a>
+          <a href="https://www.instagram.com/brigadaelectrica">
+            <img src="./assets/instagram.png" alt="instagram" class="w-8 mr-1.5">
+          </a>
+        </div>
       </div>
-      
-      <p class="text-xl text-main-white font-semibold mt-4 mb-3">Link-uri rapide</p>
-      <ul class="text-main-white">
-        <li class="mb-1 text-main-gray"><a href="#hero"> Acasa </a></li>
-        <li class="mb-1 text-main-gray"><a id="servicii-link"> Servicii </a></li>
-        <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
-      </ul>
 
-      <p class="text-xl text-main-white font-semibold mt-4 mb-3">Contact</p>
-      <ul class="text-main-white">
-        <li class="mb-2 text-main-gray flex content-center">
-          <img src="./assets/phone.png" alt="telefon" class="w-6">
-          <a href="tel:+40740543785" class="text-md ml-1.5">0740 543 785</a>
-        </li>
+      <!-- Linkuri rapide -->
+      <div>
+        <div class="mt-4 lg:mt-0">
+          <h3 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h3>
+          <ul class="text-main-white">
+            <li class="mb-1 text-main-gray"><a href="#hero"> Acasa </a></li>
+            <li class="mb-1 text-main-gray"><a id="servicii-link"> Servicii </a></li>
+            <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
+          </ul>
+        </div>
 
-        <li class="mb-2 text-main-gray flex content-center">
-          <img src="./assets/whatsapp.png" alt="whatsapp" class="w-6">
-          <a href="https://wa.me/40740543785" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
-        </li>
+      </div>
+      <!-- Contact -->
+      <div class="mt-4 lg:mt-0">
+        <p class="text-xl text-main-white font-semibold mb-3">Contact</p>
+        <ul class="text-main-white">
+          <li class="mb-2 text-main-gray flex content-center">
+            <img src="./assets/phone.png" alt="telefon" class="w-6">
+            <a href="tel:+40740543785" class="text-md ml-1.5">0740 543 785</a>
+          </li>
 
-        <li class="mb-1 text-main-gray flex content-center">
-          <img src="./assets/email.png" alt="e-mail" class="w-6">
-          <span class="text-md ml-1.5">brigada.electrica.is@gmail.com</span>
-        </li>
+          <li class="mb-2 text-main-gray flex content-center">
+            <img src="./assets/whatsapp.png" alt="whatsapp" class="w-6">
+            <a href="https://wa.me/40740543785" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
+          </li>
 
-      </ul>
+          <li class="mb-1 text-main-gray flex content-center">
+            <img src="./assets/email.png" alt="e-mail" class="w-6">
+            <span class="text-md ml-1.5">brigada.electrica.is@gmail.com</span>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
@@ -400,3 +410,6 @@
 <!-- more margin/padding inline for hero p -->
 <!-- hero buttons need styling -->
 <!-- find more colors -->
+<!-- make footer responsive -->
+<!-- fix shadow of Instalații section -->
+<!-- padding-x sa fie cat mai egal peste tot -->
