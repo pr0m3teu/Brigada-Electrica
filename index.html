@@ -5,44 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="src/styles.css">
-    <title>Brigada Electrica</title>
     <script src="https://kit.fontawesome.com/c1f0767583.js" crossorigin="anonymous"></script>
-    
+    <title>Brigada Electrica</title>
   </head>
+
   <body class="bg-main-white">
-    <!-- Hero Section -->
-    <section id="hero" class="bg-main-blue bg-[url(/assets/poza-bg.jpg)] bg-cover bg-blend-overlay h-[75vh] flex justify-center items-center flex-col">
-      <h1 class="text-4xl font-semibold text-main-white text-center">
-        Controlează Lumina Casei Tale din Telefon. Simplu. Elegant. Sigur.
-      </h1>
-      
-      <p class="mt-3 font-bold text-center w-11/12 text-secondary-blue">
-        Automatizăm iluminatul și prizele existente fără să spargem pereții. 
-        Controlezi totul din telefon sau dintr-un întrerupător wireless — instalare curată, funcționare stabilă, confort imediat.
-      </p>
+    <header class="bg-main-blue">
+      <!-- Navbar -->
+      <nav class="px-3 py-1.5 lg:px-8 lg:py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/Logo Shield White.png" alt="logo"
+          class="w-6 lg:w-10 h-full">
+          <h2 class="text-md lg:text-2xl text-main-white font-bold ml-1.5">Brigada Electrica</h2>
+        </div>
 
-      <div class="grid grid-rows-2 w-full items-center place-items-center gap-4 mt-5 md:grid-cols-2 md:gap-0 md:grid-rows-1 md:w-2/3">
-        <button id="hero-button1" class="text-main-white bg-secondary-blue 
-          py-3.5 px-3.5 text-xl w-5/6 rounded-3xl
-          flex items-center justify-center
-          cursor-pointer md:w-fit btn-primary">
+        <ul class="not-lg:hidden flex items-center text-lg font-medium">
+          <li class="text-main-white mx-1.5 cursor-pointer">Servicii</li>
+          <li class="text-main-white mx-1.5 cursor-pointer">Contact</li>
+          <li class="text-main-white mx-1.5 cursor-pointer">Lucrari</li>
+        </ul>
 
-          <img src="./assets/lighbulb.svg" alt="lightbulb icon" class="w-6">
-          <span class="ml-1.5"> Vreau o casa smart </span>      
-        </button>      
+        <div class="flex items-center justify-center">
+          <a href="https://wa.me/40740543785" 
+          class="inline-flex justify-center items-center gap-3 px-2 py-1.5 lg:px-4 lg:py-2 border-2 text-md
+              border-green-500 text-green-600 font-semibold lg:font-bold rounded-xl hover:bg-main-blue transition-colors">
+            <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl "></i>
+            Scrie pe WhatsApp
+          </a>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section id="hero" 
+        class="bg-main-blue bg-[url(/assets/poza-bg.jpg)] bg-cover bg-blend-overlay min-h-[60vh]
+        py-6 px-5 text-center
+        lg:py-10 lg:px-12 lg:text-left">
 
-        <button class="text-main-white bg-main-gold 
-          py-3.5 px-3.5 text-xl w-5/6 rounded-3xl 
-          flex items-center justify-center
-          cursor-pointer md:w-fit btn-primary"
-          onclick="window.location.href='tel:+40740543785'">
+        <h1 class="text-3xl font-bold text-main-white lg:text-6xl">
+          Controlează Lumina Casei Tale din Telefon. Simplu. Elegant. Sigur.
+        </h1>
+        
+        <p class="mt-3 font-semibold text-lg lg:text-2xl lg:w-2/3 lg:mt-4.5 text-secondary-blue">
+          Automatizăm iluminatul și prizele existente fără să spargem pereții. 
+          Controlezi totul din telefon sau dintr-un întrerupător wireless — instalare curată, funcționare stabilă, confort imediat.
+        </p>
 
-          <img src="./assets/phone.png" alt="telefon icon" class="w-6">
-          <span class="ml-1.5"> Ai o urgenta? Suna acum! </span>      
-        </button>
-       
-      </div>
-    </section>
+        <!-- Butoane hero -->
+        <div class="grid grid-rows-2 w-full items-center place-items-center gap-4 mt-5 md:flex md:gap-6">
+          <button id="hero-button1" class="text-main-white bg-secondary-blue 
+            py-3.5 px-4 text-xl w-11/12 rounded-3xl
+            flex items-center justify-center
+            cursor-pointer md:w-fit btn-primary">
+
+            <img src="./assets/lighbulb.svg" alt="lightbulb icon" class="w-6">
+            <span class="ml-1.5"> Vreau o casa smart </span>      
+          </button>      
+
+          <button class="text-main-white bg-main-gold 
+            py-3.5 px-4 text-xl w-11/12 rounded-3xl 
+            flex items-center justify-center
+            cursor-pointer md:w-fit btn-primary"
+            onclick="window.location.href='tel:+40740543785'">
+
+            <img src="./assets/phone.png" alt="telefon icon" class="w-6">
+            <span class="ml-1.5"> Ai o urgenta? Suna acum! </span>      
+          </button>
+        
+        </div>
+      </section>
+    </header>
 
     <!-- Trust Section -->
     <section class="bg-main-blue text-main-white flex justify-center-safe py-4 overflow-hidden sticky top-0 z-10">
@@ -312,4 +343,3 @@
 <!-- hero buttons need styling -->
 <!-- find more colors -->
 <!-- fix shadow of Instalații section -->
-<!-- padding-x sa fie cat mai egal peste tot -->
