@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="src/styles.css">
     <script src="https://kit.fontawesome.com/c1f0767583.js" crossorigin="anonymous"></script>
     <title>Brigada Electrica</title>
-    <link rel="icon" href="assets/Logo Shield White.png">
+    <link rel="icon" href="assets/Logo-Shield-White.png">
   </head>
 
   <body class="bg-main-white">
     <header class="bg-main-blue">
       <!-- Navbar -->
-      <nav class="px-3 py-1.5 lg:px-8 lg:py-4 flex justify-between items-center">
+      <nav class="px-3 py-1.5 lg:px-8 lg:py-3.5 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <img src="assets/Logo Shield White.png" alt="logo"
+          <img src="assets/Logo-Shield-White.png" alt="logo"
           class="w-4.5 md:w-8 lg:w-10 h-full">
           <h2 class="text-md lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrica</h2>
         </div>
@@ -38,38 +38,38 @@
       </nav>
       <!-- Hero Section -->
       <section id="hero" 
-        class="bg-main-blue bg-[url(/assets/poza-bg.jpg)] bg-cover bg-blend-overlay min-h-[60vh]
+        class="bg-main-blue bg-[url(/assets/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h[50vh] lg:min-h-[70vh]
         py-6 px-5 text-center
-        lg:py-10 lg:px-12 lg:text-left">
+        lg:py-16 lg:px-12 md:text-left">
 
-        <h1 class="text-3xl font-bold text-main-white lg:text-6xl">
+        <h1 class="text-3xl font-bold text-main-white md:text-4xl lg:text-6xl">
           Controlează Lumina Casei Tale din Telefon. Simplu. Elegant. Sigur.
         </h1>
         
-        <p class="mt-3 font-semibold text-lg lg:text-2xl lg:w-2/3 lg:mt-4.5 text-secondary-blue">
+        <p class="mt-3 font-semibold text-md md:text-lg lg:text-2xl lg:w-2/3 lg:mt-4.5 text-secondary-blue">
           Automatizăm iluminatul și prizele existente fără să spargem pereții. 
           Controlezi totul din telefon sau dintr-un întrerupător wireless — instalare curată, funcționare stabilă, confort imediat.
         </p>
 
         <!-- Butoane hero -->
-        <div class="grid grid-rows-2 w-full items-center place-items-center gap-4 mt-5 md:flex md:gap-6">
+        <div class="grid grid-rows-2 w-fit mx-auto items-center place-items-center gap-4 mt-5 md:flex md:gap-6 lg:mx-0">
           <button id="hero-button1" class="text-main-white bg-secondary-blue 
-            py-3.5 px-4 text-xl w-11/12 rounded-3xl
+            py-2 px-3 text-lg lg:py-3.5 lg:px-4 w-full lg:text-xl rounded-3xl
             flex items-center justify-center
             cursor-pointer md:w-fit btn-primary">
 
-            <img src="./assets/lighbulb.svg" alt="lightbulb icon" class="w-6">
-            <span class="ml-1.5"> Vreau o casa smart </span>      
+            <img src="./assets/lighbulb.svg" alt="lightbulb icon" class="w-4.5 md:w-6">
+            <span class="ml-1 lg:ml-1.5"> Vreau o casa smart </span>      
           </button>      
 
           <button class="text-main-white bg-main-gold 
-            py-3.5 px-4 text-xl w-11/12 rounded-3xl 
-            flex items-center justify-center
+            py-2 px-3 text-lg lg:py-3.5 lg:px-4 lg:text-xl rounded-3xl 
+            flex items-center justify-center 
             cursor-pointer md:w-fit btn-primary"
             onclick="window.location.href='tel:+40740543785'">
 
-            <img src="./assets/phone.png" alt="telefon icon" class="w-6">
-            <span class="ml-1.5"> Ai o urgenta? Suna acum! </span>      
+            <img src="./assets/phone.png" alt="telefon icon" class="w-4.5 md:w-6">
+            <span class="ml-1 lg:ml-1.5"> Ai o urgenta? Suna acum! </span>      
           </button>
         
         </div>
@@ -130,7 +130,7 @@
       </div>
 
       <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-2xl group">
-        <img src="./assets/poza-bg.jpg" alt="" 
+        <img src="./assets/poza-priza.jpg" alt="" 
         class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
         
         <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
@@ -182,8 +182,8 @@
 
       <div class="grid grid-rows-3 gap-6 lg:grid-cols-3 lg:grid-rows-1">
         <!-- CARD 1 -->
-        <div class="p-5 rounded-xl shadow-xl grid grid-row-2">
-          <div>
+        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full">
+          <div class="flex-1">
             <img src="assets/bolt.svg" alt="bolt" class="w-8 h-8 p-3 mb-2.5 box-content bg-secondary-yellow rounded-full">
             <h3 class="text-3xl font-medium">Reparații Electrice</h3>
             <p class="text-xl text-secondary-gray mt-2">Pentru problemele ce nu suporta amanare.</p>
@@ -212,11 +212,11 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="p-5 rounded-xl shadow-xl border-2 border-secondary-blue grid grid-row-2 relative">
+        <div class="p-5 rounded-xl shadow-xl border-2 border-secondary-blue flex flex-col h-full relative">
           <div class="absolute top-0 right-0 bg-secondary-blue text-main-white px-4 py-1 text-sm rounded-bl-lg">
                 Cel mai popular
           </div>
-          <div >
+          <div class="flex-1">
             <img src="assets/smart-light.png" alt="smart light" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
             <h3 class="text-3xl font-medium">Iluminat Inteligent</h3>
             <p class="text-xl text-secondary-gray mt-2">Ideal pentru dormitor sau living.</p>
@@ -245,8 +245,8 @@
         </div>
 
         <!-- CARD 3 -->
-        <div class="p-5 rounded-xl shadow-xl grid grid-row-2">
-          <div>
+        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full">
+          <div class="flex-1">
             <img src="assets/smart-home.png" alt="smart home" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
             <h3 class="text-3xl font-medium">Casa Complet Automatizată</h3>
             <p class="text-xl text-secondary-gray mt-2">Control total + economie de energie.</p>
@@ -284,7 +284,7 @@
     <footer class="px-6 py-5 mt-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
       <!-- Brigada Electrica -->
       <div>
-        <h2 class="text-2xl font-semibold text-main-white">Brigada Electrică</h2>
+        <h4 class="text-2xl font-semibold text-main-white">Brigada Electrică</h4>
         <p class="text-main-gray my-3.5">Puterea Siguranței, Energia Viitorului</p>
 
         <div class="flex content-center my-2">
@@ -294,13 +294,16 @@
           <a href="https://www.instagram.com/brigadaelectrica">
             <img src="./assets/instagram.png" alt="instagram" class="w-8 mr-1.5">
           </a>
+          <a href="https://www.tiktok.com/@brigada.electrica">
+            <img src="./assets/tiktok.png" alt="tiktok" class="w-8 mr-1.5">
+          </a>
         </div>
       </div>
 
       <!-- Linkuri rapide -->
       <div>
         <div class="mt-4 lg:mt-0">
-          <h3 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h3>
+          <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
           <ul class="text-main-white">
             <li class="mb-1 text-main-gray"><a href="#hero"> Acasa </a></li>
             <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link"> Servicii </a></li>
@@ -311,7 +314,7 @@
       </div>
       <!-- Contact -->
       <div class="mt-4 lg:mt-0">
-        <p class="text-xl text-main-white font-semibold mb-3">Contact</p>
+        <h4 class="text-xl text-main-white font-semibold mb-3">Contact</h4>
         <ul class="text-main-white">
           <li class="mb-2 text-main-gray flex content-center">
             <img src="./assets/phone.png" alt="telefon" class="w-6">
@@ -325,9 +328,14 @@
 
           <li class="mb-1 text-main-gray flex content-center">
             <img src="./assets/email.png" alt="e-mail" class="w-6">
-            <span class="text-md ml-1.5">brigada.electrica.is@gmail.com</span>
+            <a href="mailto:brigada.electrica.is@gmail.com" class="text-md ml-1.5">brigada.electrica.is@gmail.com</a>
           </li>
         </ul>
+      </div>
+      <div class="border-t lg:col-span-3 border-white/10 mt-4">
+        <p class="text-center text-main-white text-sm pt-4">
+          © <span id="year"></span> Brigada Electrica. Toate drepturile rezervate.
+        </p>
       </div>
     </footer>
 
@@ -337,9 +345,9 @@
   <!-- TODOS -->
 <!-- fix hero section buttons -->
 <!-- Font needs changing  -->
-<!-- change hero bg picture, make the transparent effect look better -->
 <!-- Make logo look better -->
 <!-- find more colors -->
 <!-- fix shadow of Instalații section -->
 <!-- add scrolling effect to more parts -->
 <!-- add slow fade in tranzition to some parts -->
+<!-- make section titles equal in sizes -->

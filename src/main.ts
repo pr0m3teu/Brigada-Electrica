@@ -15,4 +15,6 @@ serviciiLink?.addEventListener("click", () => {
     servicesSection?.scrollIntoView({
         behavior: "smooth"
     });
-})
+});
+
+document.getElementById('year')!.textContent = (new Date().getFullYear()).toString();
