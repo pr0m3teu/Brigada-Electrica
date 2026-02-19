@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/Brigada-Electrica'
+  base: '/Brigada-Electrica/',
 })

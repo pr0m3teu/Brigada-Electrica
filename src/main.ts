@@ -1,9 +1,9 @@
 import "./styles.css";
 
-let heroButton = document.getElementById("hero-button1");
-let serviciiLink = document.getElementById("servicii-link");
+const heroButton = document.getElementById("hero-button1");
+const serviciiLink = document.getElementById("servicii-link");
 
-let servicesSection = document.getElementById("servicii");
+const servicesSection = document.getElementById("servicii");
 
 heroButton?.addEventListener("click", () => {
     servicesSection?.scrollIntoView({
@@ -17,4 +17,8 @@ serviciiLink?.addEventListener("click", () => {
     });
 });
 
-document.getElementById('year')!.textContent = (new Date().getFullYear()).toString();
+const footerYear = document.getElementById('year'); 
+if (footerYear != null)
+{
+    footerYear.textContent = (new Date().getFullYear()).toString();
+}
