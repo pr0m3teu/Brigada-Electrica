@@ -26,4 +26,15 @@
         active:translate-y-0
         active:scale-[0.98]
     }
+
+    .main-service-li {
+        @apply
+        flex items-center gap-3 rounded-lg py-2 lg:py-2
+    }
+    
+    .main-service-p {
+        @apply
+        text-main-white text-sm md:text-lg lg:text-xl
+    }
 }
+
