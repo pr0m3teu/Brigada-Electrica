@@ -1,7 +1,6 @@
 import "./styles.css";
 
 const heroButton = document.getElementById("hero-button1");
-const serviciiLink = document.getElementById("servicii-link");
 
 const servicesSection = document.getElementById("servicii");
 
