@@ -2,6 +2,17 @@
 
 @theme {
     --color-main-blue: #0c1827;
+    --color-main-blue-50: #ebf2f9;
+    --color-main-blue-100: #d8e4f3;
+    --color-main-blue-200: #b1c9e7;
+    --color-main-blue-300: #8aaedb;
+    --color-main-blue-400: #6394cf;
+    --color-main-blue-500: #3c79c3;
+    --color-main-blue-600: #30619c;
+    --color-main-blue-700: #244875;
+    --color-main-blue-800: #18304e;
+    --color-main-blue-900: #0c1827;
+    --color-main-blue-950: #08111b;
     --color-secondary-blue: #2596be;
     --color-light-blue: #AADCEE;
 
@@ -34,7 +45,7 @@
     
     .main-service-p {
         @apply
-        text-main-white text-sm md:text-lg lg:text-xl
+        text-black text-sm md:text-lg lg:text-xl
     }
 }
 

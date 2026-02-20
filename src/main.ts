@@ -11,11 +11,11 @@ heroButton?.addEventListener("click", () => {
     });
 });
 
-serviciiLink?.addEventListener("click", () => {
-    servicesSection?.scrollIntoView({
-        behavior: "smooth"
-    });
-});
+// serviciiLink?.addEventListener("click", () => {
+//     servicesSection?.scrollIntoView({
+//         behavior: "smooth"
+//     });
+// });
 
 const footerYear = document.getElementById('year'); 
 if (footerYear != null)
