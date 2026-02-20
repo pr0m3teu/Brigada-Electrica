@@ -15,7 +15,7 @@
     <header class="overflow-hidden sticky top-0 z-10">
       <nav class="bg-main-blue px-3 py-2.5 md:py-3 lg:px-8 lg:py-3.5 flex justify-between items-center">
         <!-- Logo -->
-        <a href="/">
+        <a href="index.html">
         <div class="flex items-center">
           <img src="assets/png/Logo-Shield-White.png" alt="logo"
           class="w-4.5 md:w-8 lg:w-10 h-full">
@@ -284,9 +284,32 @@
       </div>
     </section>
 
-    <section class="min-h-[25vh] bg-secondary-blue text-main-white flex items-center justify-center flex-col">
-      <h2 class="text-4xl text-center font-medium lg:text-5xl">Pregătit să-ți transformi casa?</h2>
-      <p>Sună acum pentru o evaluare gratuită. Îți spunem exact ce se poate face și cât costă, fără angajamente.</p>
+    <!-- Last section -->
+    <section class="min-h-[40vh] bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col p-10">
+      <h2 class="text-4xl text-center font-medium lg:text-6xl">Pregătit să-ți transformi casa?</h2>
+      <p class="text-2xl text-center p-4">Sună acum pentru o evaluare gratuită. Îți spunem exact ce se poate face și cât costă, fără angajamente.</p>
+      
+      <div class="flex flex-col lg:flex-row gap-3 mt-2">
+          <button class="text-main-white bg-main-gold 
+              py-2 px-1.5 text-md lg:py-3 lg:px-3 lg:text-xl rounded-2xl 
+              flex items-center justify-center 
+              cursor-pointer md:w-fit btn-primary border-main-white border-2"
+              onclick="window.location.href='tel:+40740543785'">
+
+              <img src="./assets/png/phone.png" alt="telefon icon" class="w-4.5 md:w-6">
+              <span class="ml-1 lg:ml-1.5">0740 543 785</span>      
+          </button>
+          <!-- TODO: Fix animation color change and what not -->
+          <div class="flex items-center justify-center btn-primary">
+            <a href="https://wa.me/40740543785" 
+            class="h-full w-full inline-flex justify-center items-center gap-1 px-2 py-2 lg:px-4 lg:py-2 border-2 text-md lg:text-xl
+                bg-green-600 text-main-white font-semibold lg:font-bold rounded-2xl hover:bg-gree-500 transition-colors">
+              <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+    
     </section>
 
     <!-- Footer -->
@@ -314,7 +337,7 @@
         <div class="mt-4 lg:mt-0">
           <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
           <ul class="text-main-white">
-            <li class="mb-1 text-main-gray"><a href="/"> Acasa </a></li>
+            <li class="mb-1 text-main-gray"><a href="index.html"> Acasa </a></li>
             <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link" href="servicii.html"> Servicii </a></li>
             <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
           </ul>
@@ -351,6 +374,7 @@
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
   <!-- TODOS -->
 <!-- Extract some common tailwind classes to separate class -->
 <!-- trebuie schimbata culoare p tag hero -->
