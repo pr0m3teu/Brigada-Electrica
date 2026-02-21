@@ -65,5 +65,10 @@
         @apply
         opacity-0 translate-y-8 transition-all ease-out
     }
+
+    .section-header-size {
+        @apply
+        text-4xl md:text-5xl lg:text-6xl
+    }
 }
 
