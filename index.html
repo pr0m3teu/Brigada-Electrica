@@ -20,7 +20,7 @@
   <body class="bg-main-white font-poppins">
     <!-- Navbar -->
     <header class="overflow-hidden sticky top-0 z-10">
-      <nav class="bg-main-blue px-3 py-2.5 md:py-3 lg:px-8 lg:py-3.5 flex justify-between items-center">
+      <nav class="bg-main-blue/99 bg- px-3 py-2.5 md:py-3 lg:px-8 lg:py-3.5 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html">
         <div class="flex items-center">
@@ -54,12 +54,13 @@
       lg:py-16 lg:px-12 md:text-left">
 
       <h1 class="font-montserrat font-bold text-main-white section-header-size">
-        Controlează Lumina Casei Tale din Telefon. Simplu. Elegant. Sigur.
+        Transformă-ți Casa într-o Casă Smart.
+        Fără Renovări.
       </h1>
       
       <p class="mt-3 font-semibold text-lg md:text-xl lg:text-2xl lg:w-2/3 lg:mt-4.5 text-main-blue-400">
-        Automatizăm iluminatul și prizele existente fără să spargem pereții. 
-        Controlezi totul din telefon sau dintr-un întrerupător wireless — instalare curată, funcționare stabilă, confort imediat.
+        Control iluminat, prize și automatizări direct din telefon.
+        Montaj rapid peste to în Judetul Iași.
       </p>
 
       <!-- Butoane hero -->
@@ -188,7 +189,7 @@
 
     <!-- Oferte servicii -->
     <section class="mt-12 px-6 bg-main-white scroll-mt-30 mb-16 animation-fade-in duration-200" id="servicii">
-      <h2 class="text-main-blue text-center font-medium section-header-size">Servicii si pachete</h2>
+      <h2 class="text-main-blue text-center font-semibold section-header-size">Servicii si pachete</h2>
       <p class="my-5 text-2xl text-center px-3 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
 
       <div class="grid grid-rows-3 min-h-[60vh] gap-6 lg:grid-cols-3 lg:grid-rows-1">
@@ -292,11 +293,11 @@
     </section>
 
     <!-- Last section -->
-    <section class="min-h-[40vh] bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col p-10">
-      <h2 class="text-center font-medium section-header-size">Pregătit să-ți transformi casa?</h2>
-      <p class="text-2xl text-center p-4">Sună acum pentru o evaluare gratuită. Îți spunem exact ce se poate face și cât costă, fără angajamente.</p>
-      
-      <div class="flex flex-col lg:flex-row gap-3 mt-2">
+    <section class="min-h-[40vh] bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col px-6 py-8 lg:px-10 lg:py-12">
+      <h2 class="text-center font-semibold section-header-size">Pregătit să-ți transformi casa?</h2>
+      <p class="text-2xl text-center mt-4 lg:mt-6">Sună acum pentru o evaluare gratuită. Îți spunem exact ce se poate face și cât costă, fără angajamente.</p>
+    
+      <div class="w-[80%] flex flex-col justify-center lg:flex-row gap-3 mt-8">
           <button class="text-main-white bg-main-gold 
               py-2 px-1.5 text-md lg:py-3 lg:px-3 lg:text-xl rounded-2xl 
               flex items-center justify-center 
@@ -304,13 +305,13 @@
               onclick="window.location.href='tel:+40740543785'">
 
               <img src="./assets/png/phone.png" alt="telefon icon" class="w-4.5 md:w-6">
-              <span class="ml-1 lg:ml-1.5">0740 543 785</span>      
+              <span class="ml-1 lg:ml-1.5 font-semibold">0740 543 785</span>      
           </button>
           <!-- TODO: Fix animation color change and what not -->
           <div class="flex items-center justify-center btn-primary">
             <a href="https://wa.me/40740543785" 
             class="h-full w-full inline-flex justify-center items-center gap-1 px-2 py-2 lg:px-4 lg:py-2 border-2 text-md lg:text-xl
-                bg-green-600 text-main-white font-semibold lg:font-bold rounded-2xl hover:bg-gree-500 transition-colors">
+                bg-green-600 text-main-white font-semibold rounded-2xl hover:bg-green-500 transition-colors">
               <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl"></i>
               WhatsApp
             </a>
@@ -372,17 +373,21 @@
         </ul>
       </div>
       <div class="border-t lg:col-span-3 border-white/10 mt-4">
-        <p class="text-center text-main-white text-sm pt-4">
+        <p class="text-center text-main-white text-xs lg:text-sm pt-4">
           © <span id="year"></span> Brigada Electrica. Toate drepturile rezervate.
         </p>
       </div>
     </footer>
 
-    <script type="module" src="/src/main.ts"></script>
   </body>
+  <script type="module" src="/src/main.ts"></script>
 </html>
 
   <!-- TODOS -->
+<!-- fix mobile responsiveness -->
 <!-- Extract some common tailwind classes to separate class -->
 <!-- Make logo look better -->
 <!-- Adauga diacritice peste tot -->
+<!-- remove unimplemented link from navbar -->
+<!-- add [ 📞 Sună acum ]   [ 💬 WhatsApp ] sticky bar jos -->
+<!-- add Problem → Agitation Section -->
