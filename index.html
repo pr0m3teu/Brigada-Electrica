@@ -48,9 +48,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" 
+    <section id="home-title" 
       class="bg-main-blue-950 bg-[url(/assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h[50vh] lg:min-h-[70vh]
-      py-6 px-5 text-center
+      py-6 px-5 text-center scroll-m-30
       lg:py-16 lg:px-12 md:text-left">
 
       <h1 class="text-4xl font-montserrat font-bold text-main-white md:text-5xl lg:text-6xl">
@@ -66,7 +66,7 @@
       <div class="grid grid-rows-2 w-fit mx-auto items-center place-items-center gap-4 mt-5 md:flex md:gap-6 lg:mx-0">
         <button id="hero-button1" class="text-main-white bg-secondary-blue 
           py-2 px-3 text-lg lg:py-3.5 lg:px-4 w-full lg:text-xl rounded-3xl
-          flex items-center justify-center
+          flex items-center justify-center animation-fade-in duration-500
           cursor-pointer md:w-fit btn-primary">
 
           <img src="./assets/svg/lighbulb.svg" alt="lightbulb icon" class="w-4.5 md:w-6">
@@ -75,7 +75,7 @@
 
         <button class="text-main-white bg-main-gold 
           py-2 px-3 text-lg lg:py-3.5 lg:px-4 lg:text-xl rounded-3xl 
-          flex items-center justify-center 
+          flex items-center justify-center animation-fade-in duration-600
           cursor-pointer md:w-fit btn-primary"
           onclick="window.location.href='tel:+40740543785'">
 
@@ -187,13 +187,13 @@
     </main>
 
     <!-- Oferte servicii -->
-    <section class="mt-12 px-6 bg-main-white scroll-mt-16 mb-16" id="servicii">
+    <section class="mt-12 px-6 bg-main-white scroll-mt-30 mb-16 animation-fade-in duration-200" id="servicii">
       <h2 class="text-4xl text-main-blue text-center font-medium lg:text-5xl">Servicii si pachete</h2>
       <p class="my-5 text-2xl text-center px-3 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
 
       <div class="grid grid-rows-3 min-h-[60vh] gap-6 lg:grid-cols-3 lg:grid-rows-1">
         <!-- CARD 1 -->
-        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full">
+        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full animation-fade-in duration-500">
           <div class="flex-1">
             <img src="assets/svg/bolt.svg" alt="bolt" class="w-8 h-8 p-3 mb-2.5 box-content bg-secondary-yellow rounded-full">
             <h3 class="text-3xl font-medium lg:text-4xl">Reparații Electrice</h3>
@@ -223,7 +223,7 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="p-5 rounded-xl shadow-xl border-2 border-secondary-blue flex flex-col h-full relative">
+        <div class="p-5 rounded-xl shadow-xl border-2 border-secondary-blue flex flex-col h-full relative animation-fade-in duration-400">
           <div class="absolute top-0 right-0 bg-secondary-blue text-main-white px-4 py-1 text-sm rounded-bl-lg">
                 Cel mai popular
           </div>
@@ -256,7 +256,7 @@
         </div>
 
         <!-- CARD 3 -->
-        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full">
+        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full animation-fade-in duration-600">
           <div class="flex-1">
             <img src="assets/png/smart-home.png" alt="smart home" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
             <h3 class="text-3xl font-medium lg:text-4xl">Casa Complet Automatizată</h3>
@@ -344,9 +344,9 @@
         <div class="mt-4 lg:mt-0">
           <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
           <ul class="text-main-white">
-            <li class="mb-1 text-main-gray"><a href="index.html"> Acasa </a></li>
+            <li class="mb-1 cursor-pointer text-main-gray"><a id="home-link" href="index.html"> Acasa </a></li>
             <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link" href="servicii.html"> Servicii </a></li>
-            <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
+            <li class="mb-1 cursor-pointer text-main-gray"><a href="#"> Contact </a></li>
           </ul>
         </div>
 
@@ -383,9 +383,6 @@
 </html>
 
   <!-- TODOS -->
-
-<!-- add scrolling effect to more parts -->
-<!-- add slow fade in tranzition to some parts -->
 <!-- make section titles equal in sizes -->
 <!-- Extract some common tailwind classes to separate class -->
 <!-- Make logo look better -->
