@@ -45,7 +45,7 @@ export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTM
                 if (elemToHide != null) elemToHide.style.display = "none";
             }
 
-            if (!entry.isIntersecting)
+            if (!entry.isIntersecting && window.innerWidth <= 1024)
             {
                 if (elemToHide != null) elemToHide.style.display = "grid";
             }
