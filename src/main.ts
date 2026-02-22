@@ -18,6 +18,9 @@ const serviciiLink = document.getElementById("servicii-link");
 const homePageTitle = document.getElementById("home-title");
 const serviciiPageTitle = document.getElementById("servicii-title");
 
+const contactLink = document.getElementById("contact");
+const contactFooter = document.getElementById("contact-footer");
+
 function addScrollToElement(link : HTMLElement | null, element : HTMLElement | null)
 {
     if (element != null)
@@ -36,6 +39,7 @@ addScrollToElement(serviciiLink, serviciiPageTitle);
 addScrollToElement(homeLink, homePageTitle);
 // addScrollToElement(heroButton, servicesSection);
 addScrollToElement(heroButton, lastSection);
+addScrollToElement(contactLink, contactFooter);
 
 hideSection(lastSection, bottomStickyBar);
 

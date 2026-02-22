@@ -18,22 +18,23 @@
   </head>
 
 <body class="bg-main-white font-poppins">
-    <!-- Navbar -->
+<!-- Navbar -->
     <header class="overflow-hidden sticky top-0 z-10">
-      <nav class="bg-main-blue/97 px-3 py-2.5 md:py-3 lg:px-8 lg:py-3.5 flex justify-between items-center">
+      <nav class="bg-main-blue/97 px-4 py-4 md:py-4.5 lg:px-8 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html">
         <div class="flex items-center">
           <img src="assets/png/Logo-Shield-White.png" alt="logo"
           class="w-4.5 md:w-8 lg:w-10 h-full">
-          <h2 class="text-md lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrica</h2>
+          <h2 class="text-lg md:text-xl lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
         </div>
         </a>
 
         <ul class="not-md:hidden flex items-center text-lg font-medium">
-          <li class="text-main-white mx-1.5 cursor-pointer"><a href="servicii.html">Servicii</a></li>
-          <li class="text-main-white mx-1.5 cursor-pointer">Contact</li>
-          <li class="text-main-white mx-1.5 cursor-pointer">Lucrari</li>
+          <li class="text-main-white mx-1.5 cursor-pointer hover:text-gray-300"><a href="index">Acasă</a></li>
+          <li class="text-main-white mx-1.5 cursor-pointer hover:text-gray-300"><a href="servicii">Servicii</a></li>
+          <li id="contact" class="text-main-white mx-1.5 cursor-pointer hover:text-gray-300">Contact</li>
+          <!-- <li class="text-main-white mx-1.5 cursor-pointer hover:text-gray-300">Lucrari</li> -->
         </ul>
 
         <div class="hidden md:flex items-center justify-center">
@@ -186,12 +187,38 @@
           </div>
         </div>
       </div>
-    
     </main>
+
+    <!-- Last section -->
+    <section id="last-section" class="bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col px-6 py-20 space-y-6 lg:px-10 scroll-m-20">
+      <h2 class="text-center font-semibold section-header-size mb-6">Nu Știi Ce Soluție Ți se Potrivește?</h2>
+      <p class="text-2xl text-center mb-8">Sună pentru o consultație gratuită. Îți recomandăm exact ce ai nevoie, fără să-ți vindem lucruri inutile.</p>
+    
+      <div class="w-[80%] flex flex-col justify-center lg:flex-row gap-3 mt-8">
+          <button class="text-main-white bg-main-gold 
+              py-2 px-1.5 text-md lg:py-3 lg:px-3 lg:text-xl rounded-2xl 
+              flex items-center justify-center 
+              cursor-pointer md:w-fit btn-primary border-main-white border-2"
+              onclick="window.location.href='tel:+40740543785'">
+
+              <img src="./assets/png/phone.png" alt="telefon icon" class="w-4.5 md:w-6">
+              <span class="ml-1 lg:ml-1.5 font-semibold">0740 543 785</span>      
+          </button>
+          <!-- TODO: Fix animation color change and what not -->
+          <div class="flex items-center justify-center btn-primary">
+            <a href="https://wa.me/40740543785" 
+            class="h-full w-full inline-flex justify-center items-center gap-1 px-2 py-2 lg:px-4 lg:py-2 border-2 text-md lg:text-xl
+                bg-green-600 text-main-white font-semibold rounded-2xl hover:bg-green-500 transition-colors">
+              <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+    </section>
     
     
     <!-- Footer -->
-    <footer class="px-6 py-5 mt-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
+    <footer class="px-6 py-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
       <!-- Brigada Electrica -->
       <div>
         <h4 class="text-2xl font-semibold text-main-white">Brigada Electrică</h4>
@@ -215,15 +242,15 @@
         <div class="mt-4 lg:mt-0">
           <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
           <ul class="text-main-white">
-            <li class="mb-1 text-main-gray"><a href="index.html"> Acasa </a></li>
-            <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link" href="servicii.html"> Servicii </a></li>
+            <li class="mb-1 text-main-gray"><a href="index"> Acasă </a></li>
+            <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link"> Servicii </a></li>
             <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
           </ul>
         </div>
 
       </div>
       <!-- Contact -->
-      <div class="mt-4 lg:mt-0">
+      <div id="contact-footer" class="mt-4 lg:mt-0">
         <h4 class="text-xl text-main-white font-semibold mb-3">Contact</h4>
         <ul class="text-main-white">
           <li class="mb-2 text-main-gray flex content-center">
