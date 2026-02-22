@@ -48,8 +48,7 @@
     </header>
 
     <!-- Sticky bottom bar -->
-    <div class="bg-main-blue z-10 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-4 ">
-
+    <div id="bottom-sticky-bar" class="bg-main-blue z-10 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-4 ">
         <div class="flex items-center justify-center">
           <a href="https://wa.me/40740543785" 
           class="inline-flex justify-center items-center text-sm w-full gap-1 py-2 px-1 border-2 
@@ -73,7 +72,7 @@
     <!-- Hero Section -->
     <section id="home-title" 
       class="bg-main-blue-950 bg-[url(/assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h-[50vh] lg:min-h-[70vh]
-      pt-24 pb-20 px-5 text-center scroll-m-30 space-y-6
+      pt-24 pb-20 px-6 text-center scroll-m-30 space-y-6
       lg:py-16 lg:px-12 md:text-left">
 
       <h1 class="font-montserrat font-bold text-main-white section-header-size mb-6">
@@ -124,7 +123,7 @@
 
     <!-- TODO: Fix text colors for this section -->
     <!-- Smart Lighting Section  -->
-    <main class="px-6 py-20 space-y-6 bg-main-white grid gap-4 md:gap-6 md:grid-cols-2 md:grid-rows-1 animation-fade-in duration-600">
+    <main class="px-6 py-20 space-y-6 bg-main-white grid gap-10 md:gap-8 md:grid-cols-2 md:grid-rows-1 animation-fade-in duration-600">
       <div class="h-full">
         <h2 class="font-semibold mb-6 section-header-size">
           Cum facem casa Smart fără să stricăm zugrăveala?
@@ -158,8 +157,8 @@
         <img src="/assets/jpg/smart-tablet.jpg" alt="smart-home" 
         class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
         
-        <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
-            <div class="flex items-center gap-4">
+        <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-2 md:p-4 rounded-xl shadow-lg border-l-4">
+            <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-main-blue-100 rounded-full flex items-center justify-center text-brand-red shrink-0">
                     <i class="fa-solid fa-lightbulb"></i>
                 </div>
@@ -177,13 +176,12 @@
 
     <!-- De ce sa alegi brigada electrica -->
     <section class="bg-main-blue-700 px-6 py-20 space-y-6 grid gap-10 md:gap-8 md:grid-cols-2 md:grid-rows-1 animation-fade-in duration-600">
-
       <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group order-last lg:order-first">
         <img src="/assets/jpg/electrician.jpg" alt="eletrician lucrand" 
         class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
         
-        <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
-            <div class="flex items-center gap-4">
+        <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-2 md:p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
+            <div class="flex items-center gap-3 md:gap-4">
                 <div class="w-10 h-10 bg-main-blue-400 rounded-full flex items-center justify-center text-brand-red shrink-0">
                     <i class="fa-solid fa-certificate text-blue-950"></i>
                 </div>
@@ -221,111 +219,6 @@
             <p class="text-gray-300">Integram tehnologii moderne și sisteme smart pentru eficiență energetică și control inteligent.</p>
           </li>
         </ul>
-      </div>
-    </section>
-    
-    <!-- Oferte servicii -->
-    <section class="py-20 space-y-6 px-6 scroll-m-16 bg-main-white animation-fade-in duration-200" id="servicii">
-      <h2 class="text-main-blue text-center font-semibold mb-6 section-header-size">Servicii și pachete</h2>
-      <p class="mb-8 text-2xl text-center text-slate-400 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
-
-      <div class="grid grid-rows-3 min-h-[60vh] gap-6 lg:grid-cols-3 lg:grid-rows-1">
-        <!-- CARD 1 -->
-        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full animation-fade-in duration-500">
-          <div class="flex-1">
-            <img src="assets/svg/bolt.svg" alt="bolt" class="w-8 h-8 p-3 mb-2.5 box-content bg-secondary-yellow rounded-full">
-            <h3 class="text-3xl font-medium lg:text-4xl">Reparații Electrice</h3>
-            <p class="text-xl text-secondary-gray mt-2">Pentru problemele ce nu suporta amanare.</p>
-
-            <ul class="mt-4 ml-1">
-              <li class="flex my-1 items-center">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Diagnostica scurcircuite</p>
-              </li>
-              <li class="flex my-1 items-center">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Schimbare tablou electric vechi</p>
-              </li>
-              <li class="flex my-1 items-center">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Prize, întrerupătoare, corpuri de iluminat</p>
-              </li>
-            </ul>
-          </div>
-          <button class="text-main-blue bg-secondary-yellow 
-            mx-auto self-center py-2.5 px-2.5 text-xl w-5/6 h-fit rounded-full 
-            flex items-center justify-center btn-primary
-            cursor-pointer">
-            <span> Cere o intervenție </span>      
-          </button>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="p-5 rounded-xl shadow-xl border-2 border-secondary-blue flex flex-col h-full relative animation-fade-in duration-400">
-          <div class="absolute top-0 right-0 bg-secondary-blue text-main-white px-4 py-1 text-sm rounded-bl-lg">
-                Cel mai popular
-          </div>
-          <div class="flex-1">
-            <img src="assets/png/smart-light.png" alt="smart light" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
-            <h3 class="text-3xl font-medium lg:text-4xl">Iluminat Inteligent</h3>
-            <p class="text-xl text-secondary-gray mt-2">Ideal pentru dormitor sau living.</p>
-            
-            <ul class="mt-4 ml-1">
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Control lumini din telefon (iOS / Android)</p>
-              </li>
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Păstrezi întrerupătoarele existente</p>
-              </li>
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Scenarii automate: Cinema, Noapte Bună</p>
-              </li>
-            </ul>
-          </div>
-          <button href="#" class="text-main-white bg-secondary-blue 
-            mx-auto py-2.5 px-2.5 text-xl w-5/6 h-fit rounded-full 
-            flex items-center justify-center self-center btn-primary
-            cursor-pointer">
-            <span> Vezi pret pachet</span>      
-          </button>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="p-5 rounded-xl shadow-xl flex flex-col h-full animation-fade-in duration-600">
-          <div class="flex-1">
-            <img src="assets/png/smart-home.png" alt="smart home" class="w-8 h-8 p-3 mb-2.5 box-content bg-light-blue rounded-full">
-            <h3 class="text-3xl font-medium lg:text-4xl">Casa Complet Automatizată</h3>
-            <p class="text-xl text-secondary-gray mt-2">Control total + economie de energie.</p>
-            
-            <ul class="mt-4 ml-1">
-              <li class="flex items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Lumini + termostat</p>
-              </li>
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Senzori fum & inundație</p>
-              </li>
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Control vocal (Google Home / Alexa)</p>
-              </li>
-              <li class="flex  items-center my-1">
-                <img src="./assets/png/check.png" alt="bifa" class="w-5 h-5 mr-2">
-                <p class="text-md md:text-lg lg:text-xl">Buton „Stinge Tot" la plecare</p>
-              </li>
-            </ul>
-          </div>
-          <button class="text-main-white bg-secondary-blue 
-            mx-auto mt-6 self-center py-2.5 px-2.5 text-xl w-5/6 rounded-full 
-            flex items-center justify-center btn-primary
-            cursor-pointer">
-            <span> Cere oferta personalizata </span>      
-          </button>
-        </div>
       </div>
     </section>
 
@@ -392,7 +285,7 @@
     </section>
 
     <!-- Last section -->
-    <section class="bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col px-6 py-20 space-y-6 lg:px-10">
+    <section id="last-section" class="bg-linear-to-r from-main-blue-500 to-main-blue-700 text-main-white flex items-center justify-center flex-col px-6 py-20 space-y-6 lg:px-10 scroll-m-20">
       <h2 class="text-center font-semibold section-header-size mb-6">Pregătit să-ți transformi casa?</h2>
       <p class="text-2xl text-center mb-8">Sună acum pentru o evaluare gratuită. Îți spunem exact ce se poate face și cât costă, fără angajamente.</p>
     

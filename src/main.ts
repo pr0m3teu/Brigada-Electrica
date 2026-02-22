@@ -1,5 +1,5 @@
 import "./styles.css";
-import { fadeIn } from "./animations";
+import { fadeIn, hideSection } from "./animations";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const heroButton = document.getElementById("hero-button1");
-const servicesSection = document.getElementById("servicii");
+// const servicesSection = document.getElementById("servicii");
+const lastSection = document.getElementById("last-section");
+const bottomStickyBar = document.getElementById("bottom-sticky-bar");
 
 const homeLink = document.getElementById("home-link");
 const serviciiLink = document.getElementById("servicii-link");
@@ -32,7 +34,10 @@ function addScrollToElement(link : HTMLElement | null, element : HTMLElement | n
 
 addScrollToElement(serviciiLink, serviciiPageTitle);
 addScrollToElement(homeLink, homePageTitle);
-addScrollToElement(heroButton, servicesSection);
+// addScrollToElement(heroButton, servicesSection);
+addScrollToElement(heroButton, lastSection);
+
+hideSection(lastSection, bottomStickyBar);
 
 const footerYear = document.getElementById('year'); 
 if (footerYear != null)

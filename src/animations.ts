@@ -28,3 +28,29 @@ export function fadeIn(elements: NodeList) : void
 
     elements.forEach(element => observer.observe(element as HTMLElement));
 }
+
+// Needs refactoring maybe
+export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTMLElement | null) : void
+{
+    const options = {
+        root: null,
+        threshold: 0.15,
+    };
+
+    const observer = new IntersectionObserver((entries) => 
+    {
+        entries.forEach(entry => {
+            if (entry.isIntersecting)
+            {
+                if (elemToHide != null) elemToHide.style.display = "none";
+            }
+
+            if (!entry.isIntersecting)
+            {
+                if (elemToHide != null) elemToHide.style.display = "grid";
+            }
+        });
+    }, options);
+
+    observer.observe(conditionElem as Element);
+}
