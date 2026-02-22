@@ -20,7 +20,7 @@
 <body class="bg-main-white font-poppins">
     <!-- Navbar -->
     <header class="overflow-hidden sticky top-0 z-10">
-      <nav class="bg-main-blue/99 px-3 py-2.5 md:3 lg:px-8 lg:py-3.5 flex justify-between items-center">
+      <nav class="bg-main-blue/95 px-3 py-2.5 md:py-3 lg:px-8 lg:py-3.5 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html">
         <div class="flex items-center">
@@ -36,18 +36,41 @@
           <li class="text-main-white mx-1.5 cursor-pointer">Lucrari</li>
         </ul>
 
-        <div class="flex items-center justify-center">
+        <div class="hidden md:flex items-center justify-center">
           <a href="https://wa.me/40740543785" 
-          class="inline-flex justify-center items-center gap-1 px-2 py-1 lg:px-4 lg:py-2 border-2 text-sm lg:text-lg
-              border-green-500 text-green-600 font-semibold lg:font-bold rounded-xl hover:bg-main-blue transition-colors">
-            <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl"></i>
+          class="inline-flex justify-center items-center gap-1 lg:px-4 lg:py-2 border-2 md:text-md lg:text-lg
+              border-green-600 text-green-600 font-semibold lg:font-bold rounded-xl hover:shadow-2xl transition-colors">
+            <i class="fa-brands fa-whatsapp lg:text-xl"></i>
             Scrie pe WhatsApp
           </a>
         </div>
       </nav>
     </header>
 
-    <section id="servicii-title" class="min-h[50vh] scroll-mt-20 py-6 px-5 text-center lg:py-16 lg:px-12 md:text-left bg-[url(/assets/jpg/bg.jpg)] bg-main-blue bg-center bg-cover bg-blend-overlay">
+    <!-- Sticky bottom bar -->
+    <div class="bg-main-blue z-10 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-4 ">
+
+        <div class="flex items-center justify-center">
+          <a href="https://wa.me/40740543785" 
+          class="inline-flex justify-center items-center text-sm w-full gap-1 py-2 px-1 border-2 
+              border-green-600 text-green-600 font-semibold rounded-xl hover:shadow-2xl">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+        </div>
+
+        <button class="text-main-white bg-main-gold
+          py-2 px-3 text-sm rounded-xl gap-1 
+          flex items-center justify-center
+          cursor-pointer md:w-fit btn-primary"
+          onclick="window.location.href='tel:+40740543785'">
+
+          <img src="./assets/png/phone.png" alt="telefon icon" class="w-4">
+          <span class="font-medium "> Sună acum! </span>      
+        </button>
+    </div>
+
+    <section id="servicii-title" class="scroll-mt-20 py-8 px-5 text-center lg:py-16 lg:px-12 md:text-left bg-[url(/assets/jpg/bg.jpg)] bg-main-blue bg-center bg-cover bg-blend-overlay">
         <h1 class="text-3xl font-bold text-main-white md:text-4xl lg:text-6xl scroll-mt-16">
           Serviciile noastre
         </h1>
