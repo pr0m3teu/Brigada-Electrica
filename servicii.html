@@ -48,29 +48,40 @@
         </div>
       </nav>
       
-      <nav class="bg-main-blue nav-mobile flex md:hidden px-4 py-4 justify-between items-center">
+      <!-- Hamburger menu mobile -->
+      <nav class="bg-main-blue nav-mobile flex md:hidden px-4 py-2 justify-between items-center">
           <label htmlFor="checkbox" class="hamburger-menu">
               <input type="checkbox" name="check" id="checkbox"/>
           </label>
-          <a to="/" class="link">
+          <a href="index" class="link">
             <div class="flex items-center">
-              <img id="nav-logo" class="w-6 md:w-8 lg:w-10 h-full" src="/assets/png/Logo-Shield-White.png" alt="logo"/>
-              <h2 class="text-lg md:text-xl lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
+              <img id="nav-logo" class="w-10 h-full" src="/assets/png/Logo-Shield-White.png" alt="logo"/>
+              <h2 class="text-xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
             </div>
           </a>
       </nav>
       <aside class="sidebar">
           <div>
-              <ul class="text-2xl font-medium px-4">
-                  <li><a href="/" class="my-2.5" > Acasă </a></li>
-                  <li><a href="servicii" class="my-2.5"> Servicii </a></li>
+              <ul class="text-3xl font-medium px-5">
+                  <li><a href="index" class="my-3" > Acasă </a></li>
+                  <li><a href="servicii" class="my-3"> Servicii</a></li>
+                  <li>
+                    <div class="mt-8">
+                      <a href="https://wa.me/40740543785" 
+                        class="inline-flex justify-center text-2xl items-center gap-2 px-2 py-3 border-2 
+                          border-green-600 text-green-700 font-semibold rounded-xl hover:shadow-2xl transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Scrie pe WhatsApp
+                      </a>
+                    </div>
+                  </li>
               </ul>
           </div>
       </aside>
     </header>
 
     <!-- Sticky bottom bar -->
-    <div id="bottom-sticky-bar" class="bg-main-blue z-10 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-2 ">
+    <div id="bottom-sticky-bar" class="bg-main-blue z-1 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-2 ">
 
         <div class="flex items-center justify-center">
           <a href="https://wa.me/40740543785" 
