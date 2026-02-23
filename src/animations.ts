@@ -42,12 +42,15 @@ export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTM
         entries.forEach(entry => {
             if (entry.isIntersecting)
             {
-                if (elemToHide != null) elemToHide.style.display = "none";
+                if (elemToHide != null) 
+                {
+                    elemToHide.classList.replace("grid", "hidden");
+                }
             }
 
             if (!entry.isIntersecting && window.innerWidth <= 1024)
             {
-                if (elemToHide != null) elemToHide.style.display = "grid";
+                if (elemToHide != null) elemToHide.classList.replace("hidden", "grid");
             }
         });
     }, options);
