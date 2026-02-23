@@ -2,7 +2,7 @@ export function fadeIn(elements: NodeList) : void
 {
     const options = {
         root: null,
-        threshold: 0.15
+        threshold: 0.2
     };
 
     const observer = new IntersectionObserver((entries, observer) =>
@@ -10,7 +10,7 @@ export function fadeIn(elements: NodeList) : void
         entries.forEach(entry => {
             if(entry.isIntersecting)
             {
-                entry.target.classList.remove("opacity-0", "translate-y-8");
+                entry.target.classList.remove("opacity-0", "translate-y-12");
                 entry.target.classList.add("opacity-100", "translate-y-0");
                 if(!(entry.target instanceof HTMLButtonElement))
                 {
@@ -21,7 +21,7 @@ export function fadeIn(elements: NodeList) : void
             if(!entry.isIntersecting )
             {
                 entry.target.classList.remove("opacity-100", "translate-y-0");
-                entry.target.classList.add("opacity-0", "translate-y-8");
+                entry.target.classList.add("opacity-0", "translate-y-12");
             }
         });
     }, options);
@@ -34,7 +34,7 @@ export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTM
 {
     const options = {
         root: null,
-        threshold: 0.15,
+        threshold: 0.1,
     };
 
     const observer = new IntersectionObserver((entries) => 
