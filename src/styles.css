@@ -70,5 +70,10 @@
         @apply
         text-4xl md:text-5xl lg:text-6xl
     }
+
+    .link-rapid {
+        @apply
+        mb-1 text-main-gray hover:text-gray-400 w-fit
+    }
 }
 

@@ -1,0 +1,110 @@
+:root {
+ --bar-width: 50px;
+ --bar-height: 5px;
+ --hamburger-gap: 7px;   
+ --foregrund: #F9FAFB;
+ --hamburger-margin: 10px;
+ --background: #333;
+ --animation-timing: 200ms ease-in-out;
+ --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: var(--hamburger-gap);
+    cursor: pointer;
+    margin-left: 4px;
+
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foregrund);
+    border-radius: 100px;
+    align-self: center;
+
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), 
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+.hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.hamburger-menu:has(input:checked)::before {
+ rotate: 45deg;   
+ width: var(--x-width);
+ translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+ rotate: -45deg;   
+ width: var(--x-width);
+ translate: 0 calc(var(--bar-height) / 2);
+}
+
+.sidebar {
+    /* --- This is the new positioning --- */
+    position: fixed; /* Takes it out of the normal flow */
+    top: 0;
+    left: 0;
+    z-index: 99; /* Puts it behind the hamburger menu */
+    /* --- This is the new default state --- */
+    translate: -100% 0; /* Start 100% off-screen to the left */
+    transition: translate var(--animation-timing);
+
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: #2d567b;
+    color: #F9FAFB;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.sidebar  a {
+    color: #F9FAFB;
+}
+
+.nav-mobile {
+    position: relative; /* Can also be 'sticky' or 'fixed' */
+    z-index: 100; /* Must be higher than the sidebar's 99 */
+}
+
+/* --- This is your corrected selector --- */
+/* Select the <nav> that :has a checked input,
+   then select its adjacent sibling (+) .sidebar */
+nav:has(input:checked) + .sidebar {
+    /* Move it on-screen */
+    translate: 0;
+}
+
+/* Target the first <div> inside the sidebar */
+.sidebar > div {
+    /* ADD the padding-top here */
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+}

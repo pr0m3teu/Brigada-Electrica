@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/hamburger.css">
     <link rel="stylesheet" href="/src/styles.css">
     
     <!-- Fontawesome icons -->
@@ -19,8 +20,8 @@
 
 <body class="bg-main-white font-poppins">
 <!-- Navbar -->
-    <header class="overflow-hidden sticky top-0 z-10">
-      <nav class="bg-main-blue/97 px-4 py-4 md:py-4.5 lg:px-8 flex justify-between items-center">
+    <header class="bg-main-blue/97 overflow-hidden sticky top-0 z-10">
+      <nav class="hidden px-4 py-4 md:py-4.5 lg:px-8 md:flex justify-between items-center">
         <!-- Logo -->
         <a href="index">
         <div class="flex items-center">
@@ -46,6 +47,26 @@
           </a>
         </div>
       </nav>
+      
+      <nav class="bg-main-blue nav-mobile flex md:hidden px-4 py-4 justify-between items-center">
+          <label htmlFor="checkbox" class="hamburger-menu">
+              <input type="checkbox" name="check" id="checkbox"/>
+          </label>
+          <a to="/" class="link">
+            <div class="flex items-center">
+              <img id="nav-logo" class="w-6 md:w-8 lg:w-10 h-full" src="/assets/png/Logo-Shield-White.png" alt="logo"/>
+              <h2 class="text-lg md:text-xl lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
+            </div>
+          </a>
+      </nav>
+      <aside class="sidebar">
+          <div>
+              <ul class="text-2xl font-medium px-4">
+                  <li><a href="/" class="my-2.5" > Acasă </a></li>
+                  <li><a href="servicii" class="my-2.5"> Servicii </a></li>
+              </ul>
+          </div>
+      </aside>
     </header>
 
     <!-- Sticky bottom bar -->
@@ -242,9 +263,9 @@
         <div class="mt-4 lg:mt-0">
           <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
           <ul class="text-main-white">
-            <li class="mb-1 text-main-gray"><a href="index"> Acasă </a></li>
-            <li class="mb-1 cursor-pointer text-main-gray"><a id="servicii-link"> Servicii </a></li>
-            <li class="mb-1 text-main-gray"><a href="#"> Contact </a></li>
+            <li class="link-rapid"><a href="index"> Acasă </a></li>
+            <li class="link-rapid"><a id="servicii-link"> Servicii </a></li>
+            <li class="link-rapid"><a href="#"> Contact </a></li>
           </ul>
         </div>
 
@@ -263,11 +284,11 @@
             <a href="https://wa.me/40740543785" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
           </li>
 
-          <li class="mb-1 text-main-gray flex content-center">
+          <li class="mb-2 text-main-gray flex content-center">
             <img src="/assets/png/email.png" alt="e-mail" class="w-6">
             <a href="mailto:brigada.electrica.is@gmail.com" class="text-md ml-1.5">brigada.electrica.is@gmail.com</a>
           </li>
-          <li class="mb-1 text-main-gray flex content-center">
+          <li class="text-main-gray flex content-center">
             <img src="/assets/svg/location.svg" alt="locatie" class="w-6">
             <p class="text-md ml-1.5">Județul Iași</p>
           </li>
