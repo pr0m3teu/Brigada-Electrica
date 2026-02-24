@@ -90,19 +90,14 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .nav-mobile {
-    position: relative; /* Can also be 'sticky' or 'fixed' */
-    z-index: 100; /* Must be higher than the sidebar's 99 */
+    position: relative;
+    z-index: 100; 
 }
 
-/* --- This is your corrected selector --- */
-/* Select the <nav> that :has a checked input,
-   then select its adjacent sibling (+) .sidebar */
 nav:has(input:checked) + .sidebar {
-    /* Move it on-screen */
     translate: 0;
 }
 
-/* Target the first <div> inside the sidebar */
 .sidebar > div {
     /* ADD the padding-top here */
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin));
