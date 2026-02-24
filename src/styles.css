@@ -78,22 +78,22 @@
 
     .title-servicii-card {
         @apply
-        text-center mt-2 mb-3 text-xl font-medium md:mb-5 lg:text-4xl lg:text-left
+        text-center mt-2 mb-3 text-2xl font-semibold md:mb-5 lg:text-4xl lg:text-left
     }
 
     .description-servicii-card {
         @apply
-        text-sm text-secondary-gray mb-6 text-center md:mb-8 lg:text-left lg:text-xl
+        text-sm text-secondary-gray mb-6 text-center font-medium md:mb-8 lg:text-left lg:text-xl
     }
 
     .li-servicii-section {
         @apply
-        flex  items-center my-1
+        flex items-center my-1
     }
     
     .p-li-servicii-section {
         @apply
-        text-sm md:text-lg
+        text-sm md:text-lg ml-1
     }
 
 }
