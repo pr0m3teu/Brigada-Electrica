@@ -1,7 +1,7 @@
 :root {
- --bar-width: 50px;
- --bar-height: 4px;
- --hamburger-gap: 6px;   
+ --bar-width: 40px;
+ --bar-height: 3px;
+ --hamburger-gap: 5px;   
  --foregrund: #F9FAFB;
  --hamburger-margin: 10px;
  --background: #333;
@@ -79,10 +79,10 @@ a:link, a:visited, a:hover, a:active {
 
     padding: 0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: #244875;
+    background-color: rgba(36, 72, 117, 0.98); /* #244875 */
     color: #F9FAFB;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
 
 }
 
