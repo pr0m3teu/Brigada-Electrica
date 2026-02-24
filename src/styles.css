@@ -78,12 +78,12 @@
 
     .title-servicii-card {
         @apply
-        text-center mt-2 mb-3 text-2xl font-semibold md:mb-5 lg:text-4xl lg:text-left
+        text-center mt-2 mb-3 text-2xl font-semibold md:mb-5 lg:text-4xl lg:text-left text-main-blue
     }
 
     .description-servicii-card {
         @apply
-        text-sm text-secondary-gray mb-6 text-center font-medium md:mb-8 lg:text-left lg:text-xl
+        text-sm text-gray-500 mb-6 text-center font-medium md:mb-8 lg:text-left lg:text-xl
     }
 
     .li-servicii-section {
@@ -93,7 +93,7 @@
     
     .p-li-servicii-section {
         @apply
-        text-sm md:text-lg ml-1
+        text-sm md:text-lg ml-1 text-gray-600
     }
 
 }

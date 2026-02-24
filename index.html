@@ -62,17 +62,17 @@
       </nav>
       <aside class="sidebar">
           <div class="h-full">
-              <ul class="text-3xl h-full text-center flex pb-3 flex-col font-medium px-5">
-                  <li class="w-full mx-auto text-sm"><a href="index">
-                    <p class="my-3 mx-auto text-center">Acasă</p>
+              <ul class="h-full text-center flex pb-3 flex-col font-medium px-5">
+                  <li class="w-full mx-auto"><a href="index">
+                    <p class="my-3 mx-auto text-base text-center">Acasă</p>
                   </a></li>
-                  <li class="w-full mx-auto text-sm"><a href="servicii"> 
+                  <li class="w-full mx-auto text-base"><a href="servicii"> 
                     <p class="my-3 mx-auto text-center">Servicii</p>
                   </a></li>
                   <li class="w-fit mx-auto mt-auto">
                     <div class="mt-8">
                       <a href="https://wa.me/40740543785" 
-                        class="inline-flex justify-center text-sm items-center gap-2 px-2 py-3 border-2 
+                        class="inline-flex justify-center text-base items-center gap-2 px-2 py-3 border-2 
                           border-green-600 text-green-700 font-semibold rounded-xl hover:shadow-2xl transition-colors">
                         <i class="fa-brands fa-whatsapp"></i>
                         Scrie pe WhatsApp
@@ -110,7 +110,7 @@
     <!-- Hero Section -->
     <section id="home-title" 
       class="bg-main-blue-950 bg-[url(/assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h-[50vh]
-      pt-24 pb-20 px-6 text-center scroll-m-30 space-y-6
+      pt-24 pb-20 px-5 text-center scroll-m-30 space-y-6
       lg:py-16 lg:px-12 md:text-left">
 
       <h1 class="font-montserrat font-bold text-main-white section-header-size mb-6">
@@ -118,7 +118,7 @@
         Fără renovări.
       </h1>
       
-      <p class="font-semibold text-lg md:text-xl lg:text-2xl lg:w-2/3 text-main-blue-400">
+      <p class="font-semibold mb-8 text-lg md:text-xl lg:text-2xl lg:w-2/3 text-main-blue-400">
         Control iluminat, prize și automatizări direct din telefon.
         Montaj rapid peste to în Judetul Iași.
       </p>
@@ -126,16 +126,16 @@
       <!-- Butoane hero -->
       <div class="w-fit mx-auto items-center place-items-center gap-4 mt-5 md:flex md:gap-6 lg:mx-0">
         <button id="hero-button1" class="text-main-white bg-main-blue-700 
-          py-2 px-3 text-lg lg:py-3.5 lg:px-4 w-full lg:text-xl rounded-3xl
+          py-2 px-6 text-lg lg:py-3.5 w-full lg:text-xl rounded-3xl
           flex items-center justify-center animation-fade-in duration-500
           cursor-pointer md:w-fit btn-primary">
 
-          <img src="./assets/svg/lighbulb.svg" alt="lightbulb icon" class="w-4.5 md:w-6">
+          <img src="./assets/svg/lighbulb.svg" alt="lightbulb icon" class="w-5 font-medium md:w-6">
           <span class="ml-1 lg:ml-1.5 font-medium"> Vreau o casă smart </span>      
         </button>      
 
         <button class="text-main-white bg-main-gold hidden
-          py-2 px-3 text-lg lg:py-3.5 lg:px-4 lg:text-xl rounded-3xl 
+          py-2 px-3 text-lg lg:py-3.5 lg:px-6 lg:text-xl rounded-3xl 
           md:flex items-center justify-center animation-fade-in duration-600
           cursor-pointer md:w-fit btn-primary"
           onclick="window.location.href='tel:+40740543785'">
@@ -324,20 +324,22 @@
 
     <!-- Oferte servicii -->
     <section class="py-20 space-y-6 px-6 scroll-m-16 bg-main-white lg:px-20" id="servicii">
+      <!-- Ce oferim -->
       <div class="flex flex-1 items-center justify-center mb-10">
-        <p class=" bg-main-blue-200 w-fit text-main-blue-700 font-semibold text-md py-1 px-3 rounded-2xl">
+        <p class=" bg-main-blue-200 w-fit text-main-blue-700 font-semibold text-md py-1 px-4 rounded-2xl">
           Ce oferim
         </p>
       </div>
+
       <h2 class="text-main-blue text-center font-semibold mb-6 animation-fade-in duration-300 section-header-size">Servicii și pachete</h2>
-      <p class="mb-8 text-2xl text-center text-slate-400 animation-fade-in duration-400 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
+      <p class="mb-8 text-2xl text-center text-gray-500 animation-fade-in duration-400 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
 
       <div class="grid grid-rows-3 gap-y-16 md:px-6 lg:grid-cols-3 lg:grid-rows-1 lg:gap-12 ">
       
         <!-- CARD 1 -->
         <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full animation-fade-in duration-500 lg:duration-700 lg:py-10">
           <div class="flex-1">
-            <img src="assets/svg/bolt.svg" alt="bolt" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-secondary-yellow rounded-2xl">
+            <img src="assets/svg/bolt.svg" alt="bolt" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-secondary-yellow/60 rounded-2xl">
             <h3 class="title-servicii-card">Reparații Electrice</h3>
             <p class="description-servicii-card">Pentru problemele ce nu suporta amanare.</p>
 
@@ -365,7 +367,7 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="py-6 px-6 rounded-xl shadow-2xl border-2 border-secondary-blue flex flex-col h-full relative animation-fade-in duration-500 lg:duration-600 lg:py-10">
+        <div class="py-6 px-6 rounded-xl shadow-2xl border-2 border-secondary-blue/60 flex flex-col h-full relative animation-fade-in duration-500 lg:duration-600 lg:py-10">
 
           <div class="absolute top-0 right-0 bg-secondary-blue text-main-white px-4 py-1 text-sm rounded-bl-lg">
                 Cel mai popular
@@ -402,7 +404,7 @@
         <!-- CARD 3 -->
         <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full animation-fade-in duration-500 lg:duration-800 lg:py-10">
           <div class="flex-1">
-            <img src="assets/png/smart-home.png" alt="smart home" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue rounded-2xl">
+            <img src="assets/png/smart-home.png" alt="smart home" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue/60 rounded-2xl">
             <h3 class="title-servicii-card">Casa Complet Automatizată</h3>
             <p class="description-servicii-card">Control total + economie de energie.</p>
             
