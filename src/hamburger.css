@@ -74,7 +74,7 @@ a:link, a:visited, a:hover, a:active {
     left: 0;
     z-index: 99; /* Puts it behind the hamburger menu */
     /* --- This is the new default state --- */
-    translate: -100% 0; /* Start 100% off-screen to the left */
+    translate: 0 -100%; /* Start 100% off-screen to the left */
     transition: translate var(--animation-timing);
 
     padding: 0.5rem 1rem;
