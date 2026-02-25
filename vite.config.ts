@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/Brigada-Electrica/',
+  base: '/',
   build: {
     rollupOptions : {
       input: {
