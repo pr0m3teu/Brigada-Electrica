@@ -14,5 +14,8 @@ export default defineConfig({
         servicii: resolve(__dirname, "servicii.html")
       },
     },
+    cssCodeSplit: true,
+    minify: true,
+    cssMinify: true
   },
 });

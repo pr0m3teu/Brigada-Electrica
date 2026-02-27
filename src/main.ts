@@ -41,7 +41,7 @@ addScrollToElement(homeLink, homePageTitle);
 addScrollToElement(heroButton, lastSection);
 addScrollToElement(contactLink, contactFooter);
 
-hideSection(lastSection, bottomStickyBar);
+hideSection(contactFooter, bottomStickyBar);
 
 const footerYear = document.getElementById('year'); 
 if (footerYear != null)

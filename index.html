@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Servicii electrice smart home fara renovari in Iasi. Contact: 0740 543 785">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+      rel="stylesheet" as="font" crossorigin> 
     <link rel="stylesheet" href="src/hamburger.css">
     <link rel="stylesheet" href="/src/styles.css">
-    
-    <!-- Fontawesome icons -->
-    <script src="https://kit.fontawesome.com/c1f0767583.js" crossorigin="anonymous"></script>
 
     <title>Brigada Electrica - Instalatii Smart in Iasi</title>
     <link rel="icon" href="/assets/png/Logo-Shield-White.png">
@@ -33,7 +32,7 @@
         <!-- Logo -->
         <a href="index.html">
         <div class="flex items-center">
-          <img src="assets/png/Logo-Shield-White.png" alt="logo"
+          <img src="assets/png/Logo-Shield-White.png" fetchpriority="high" alt="logo"
           class="w-6 md:w-8 lg:w-10 h-full">
           <h2 class="text-lg md:text-xl lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
         </div>
@@ -119,7 +118,7 @@
     <section id="home-title" 
       class="bg-main-blue-950 bg-[url(/assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h-[50vh]
       pt-24 pb-20 px-5 text-center scroll-m-30 space-y-6
-      lg:py-16 lg:px-12 md:text-left">
+      lg:py-16 lg:px-12 md:text-left" >
 
       <h1 class="font-montserrat font-bold text-main-white section-header-size mb-6">
         Transformă-ți casa într-o casă smart.
@@ -138,7 +137,7 @@
           flex items-center justify-center animation-fade-in duration-500
           cursor-pointer md:w-fit lg:btn-primary">
 
-          <img src="./assets/svg/lighbulb.svg" alt="lightbulb icon" class="w-5 font-medium md:w-6">
+          <img src="./assets/svg/lighbulb.svg" fetchpriority="low" alt="lightbulb icon" class="w-5 font-medium md:w-6">
           <span class="ml-1 lg:ml-1.5 font-medium"> Vreau o casă smart </span>      
         </button>      
 
@@ -156,7 +155,7 @@
     </section>
 
     <!-- Trust Section -->
-    <section class="bg-main-blue text-main-white flex justify-center-safe py-4">
+    <section class="bg-main-blue text-main-white flex justify-center-safe py-4 h-fit">
       <div class="mx-3 text-md flex"> 
         <img src="./assets/svg/shield.svg" alt="scut" class="mr-0.5">
         <p>Autorizat ANRE</p>
@@ -224,7 +223,7 @@
     <section class="bg-main-blue-700 px-6 py-20 space-y-6 grid gap-10 md:gap-8 md:grid-cols-2 md:grid-rows-1 md:px-7 lg:pr-12 lg:pl-8">
       <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group order-last lg:order-first  animation-fade-in duration-500">
         <img src="/assets/jpg/electrician.jpg" alt="eletrician lucrand" 
-        class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
+        class="absolute rounded-4xl shadow-2xl h-full w-full bg-right object-cover transition duration-700 group-hover:scale-105 inset-0">
         
         <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-2 md:p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
             <div class="flex items-center gap-3 md:gap-4">
@@ -552,7 +551,9 @@
     </footer>
 
   </body>
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/main.ts" defer></script>
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/c1f0767583.js" crossorigin="anonymous" defer></script>
 </html>
 
   <!-- TODOS -->
