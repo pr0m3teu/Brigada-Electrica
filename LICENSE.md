@@ -58,4 +58,4 @@ This project is provided "as is", without warranty of any kind.
 ## 6. Contact
 
 For licensing inquiries:
-brigada.electric.is@gmail.com
+brigada.electrica.is@gmail.com   
