@@ -1,88 +1,13 @@
 <!DOCTYPE html>
 <html lang="ro">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/hamburger.css">
-    <link rel="stylesheet" href="/src/styles.css">
-    
-    <!-- Fontawesome icons -->
-    <script src="https://kit.fontawesome.com/c1f0767583.js" crossorigin="anonymous"></script>
-
-    <title>Brigada Electrica</title>
-    <link rel="icon" href="/assets/png/Logo-Shield-White.png">
+    <include src="partials/head-links.html"></include>
+    <title>Brigada Electrică - Servicii</title>
   </head>
 
 <body class="bg-main-white font-poppins">
-<!-- Navbar -->
-    <header class="bg-main-blue/97 overflow-hidden sticky top-0 z-10">
-      <nav class="hidden px-4 py-4 md:py-4.5 lg:px-8 md:flex justify-between items-center">
-        <!-- Logo -->
-        <a href="index.html">
-        <div class="flex items-center">
-          <img src="assets/png/Logo-Shield-White.png" alt="logo"
-          class="w-6 md:w-8 lg:w-10 h-full">
-          <h2 class="text-lg md:text-xl lg:text-2xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
-        </div>
-        </a>
-
-        <ul class="not-md:hidden flex items-center text-lg font-medium">
-          <li class="text-main-white mx-3 cursor-pointer hover:text-gray-300"><a href="index.html">Acasă</a></li>
-          <li class="text-main-white mx-3 cursor-pointer hover:text-gray-300"><a href="servicii">Servicii</a></li>
-          <li id="contact" class="text-main-white mx-3 cursor-pointer hover:text-gray-300">Contact</li>
-          <!-- <li class="text-main-white mx-1.5 cursor-pointer hover:text-gray-300">Lucrari</li> -->
-        </ul>
-
-        <div class="hidden md:flex items-center justify-center">
-          <a href="https://wa.me/40740543785" 
-          class="inline-flex justify-center items-center gap-1 lg:px-4 lg:py-2 border-2 md:text-md lg:text-lg
-              border-green-600 text-green-600 font-semibold lg:font-bold rounded-xl hover:shadow-2xl transition-colors">
-            <i class="fa-brands fa-whatsapp lg:text-xl"></i>
-            Scrie pe WhatsApp
-          </a>
-        </div>
-      </nav>
-      
-      <!-- Hamburger menu mobile -->
-      <nav class="bg-main-blue nav-mobile flex md:hidden px-4 py-2 justify-between items-center">
-        <a href=".html" class="link">
-          <div class="flex items-center">
-            <img id="nav-logo" class="w-10 h-full" src="/assets/png/Logo-Shield-White.png" alt="logo"/>
-            <h2 class="text-xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
-          </div>
-        </a>
-        <label for="checkbox" class="hamburger-menu">
-            <input type="checkbox" name="check" id="checkbox"/>
-        </label>
-      </nav>
-      <aside class="sidebar">
-          <div class="h-full">
-              <ul class="text-3xl h-full text-center flex pb-3 flex-col font-medium px-5">
-                  <li class="w-full mx-auto"><a href="index.html">
-                    <p class="my-3 mx-auto text-base text-center">Acasă</p>
-                  </a></li>
-                  <li class="w-full mx-auto"><a href="servicii"> 
-                    <p class="my-3 mx-auto text-base text-center">Servicii</p>
-                  </a></li>
-                  <li class="w-fit mx-auto mt-auto">
-                    <div class="mt-8">
-                      <a href="https://wa.me/40740543785" 
-                        class="inline-flex justify-center text-base items-center gap-2 px-2 py-3 border-2 
-                          border-green-600 text-green-700 font-semibold rounded-xl hover:shadow-2xl transition-colors">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        Scrie pe WhatsApp
-                      </a>
-                    </div>
-                  </li>
-              </ul>
-          </div>
-      </aside>
-    </header>
+    <!-- Navbar -->
+    <include src="partials/navbar.html"></include>
 
     <!-- Sticky bottom bar -->
     <div id="bottom-sticky-bar" class="bg-main-blue z-1 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-2 ">
@@ -246,72 +171,9 @@
     
     
     <!-- Footer -->
-    <footer class="px-6 py-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
-      <!-- Brigada Electrica -->
-      <div>
-        <h4 class="text-2xl font-semibold text-main-white">Brigada Electrică</h4>
-        <p class="text-main-gray my-3.5">Puterea Siguranței, Energia Viitorului</p>
-
-        <p class="leading-relaxed text-sm font-light text-main-gray mb-4">
-          Siguranță și eficiență în instalații electrice interioare și exterioare.
-          Oferim proiectare, execuție, modificări și reparații pentru locuințe, spații comerciale și industriale.
-        </p>
-
-        <div class="flex content-center my-2">
-          <a href="https://www.facebook.com/brigadaelectrica">
-            <img src="./assets/png/facebook.png" alt="facebook " class="w-8 mr-1.5">
-          </a>
-          <a href="https://www.instagram.com/brigadaelectrica">
-            <img src="./assets/png/instagram.png" alt="instagram" class="w-8 mr-1.5">
-          </a>
-          <a href="https://www.tiktok.com/@brigada.electrica">
-            <img src="./assets/png/tiktok.png" alt="tiktok" class="w-8 mr-1.5">
-          </a>
-        </div>
-      </div>
-
-      <!-- Linkuri rapide -->
-      <div>
-        <div class="mt-4 lg:mt-0">
-          <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
-          <ul class="text-main-white">
-            <li class="link-rapid"><a href="index.html"> Acasă </a></li>
-            <li class="link-rapid"><a id="servicii-link"> Servicii </a></li>
-            <li class="link-rapid"><a href="#"> Contact </a></li>
-          </ul>
-        </div>
-
-      </div>
-      <!-- Contact -->
-      <div id="contact-footer" class="mt-4 lg:mt-0">
-        <h4 class="text-xl text-main-white font-semibold mb-3">Contact</h4>
-        <ul class="text-main-white">
-          <li class="mb-2 text-main-gray flex content-center">
-            <img src="/assets/png/phone.png" alt="telefon" class="w-6">
-            <a href="tel:+40740543785" class="text-md ml-1.5">0740 543 785</a>
-          </li>
-
-          <li class="mb-2 text-main-gray flex content-center">
-            <img src="/assets/png/whatsapp.png" alt="whatsapp" class="w-6">
-            <a href="https://wa.me/40740543785" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
-          </li>
-
-          <li class="mb-2 text-main-gray flex content-center">
-            <img src="/assets/png/email.png" alt="e-mail" class="w-6">
-            <a href="mailto:brigada.electrica.is@gmail.com" class="text-md ml-1.5">brigada.electrica.is@gmail.com</a>
-          </li>
-          <li class="text-main-gray flex content-center">
-            <img src="/assets/svg/location.svg" alt="locatie" class="w-6">
-            <p class="text-md ml-1.5">Județul Iași</p>
-          </li>
-        </ul>
-      </div>
-      <div class="border-t lg:col-span-3 border-white/10 mt-4">
-        <p class="text-center text-main-white text-xs lg:text-sm pt-4">
-          © <span id="year"></span> Brigada Electrica. Toate drepturile rezervate.
-        </p>
-      </div>
-    </footer>
-    <script type="module" src="/src/scripts/main.ts"></script>
-</body>
+    <include src="partials/footer.html"></include>
+  </body>
+  <script type="module" src="/src/scripts/main.ts"></script>
 </html>
+
+<!-- TODO: Solve bug where year doesn't appear in servicii.html footer -->

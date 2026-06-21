@@ -6,3 +6,4 @@
 # Change the alt tags to each img
 # Reduce unused css (maybe remove dependency on fontawesome.com)
 # Add README.md and LICENSE.md
+# TODO: Solve bug where year doesn't appear in servicii.html footer
