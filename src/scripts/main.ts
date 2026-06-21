@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const heroButton = document.getElementById("hero-button1");
 // const servicesSection = document.getElementById("servicii");
-const lastSection = document.getElementById("last-section");
+const lastSection = document.getElementById("smart-home-section");
 const bottomStickyBar = document.getElementById("bottom-sticky-bar");
 
 const homeLink = document.getElementById("home-link");
