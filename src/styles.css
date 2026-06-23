@@ -98,3 +98,54 @@
 
 }
 
+.custom-select-wrapper {
+    @apply relative;
+}
+
+.custom-select {
+    @apply
+    w-full px-4 py-3 pr-11
+    rounded-lg border-2 border-gray-200
+    bg-main-white text-main-blue
+    font-medium text-base
+    cursor-pointer
+    transition-colors duration-300
+    focus:border-main-blue focus:outline-none
+    appearance-none;
+}
+
+/* Săgeată custom, în culorile brandului */
+.custom-select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-right: 2px solid var(--color-main-blue);
+    border-bottom: 2px solid var(--color-main-blue);
+    transform: translateY(-65%) rotate(45deg);
+    pointer-events: none;
+    transition: border-color 0.3s ease;
+}
+
+.custom-select:focus ~ .custom-select-wrapper::after,
+.custom-select-wrapper:has(.custom-select:focus)::after {
+    border-color: var(--color-main-gold);
+}
+
+/* Stare disabled/placeholder mai discretă */
+.custom-select option[disabled] {
+    color: #9ca3af;
+}
+
+/* Stilizare minimă pentru opțiunile din dropdown (suport variabil pe browsere) */
+.custom-select option {
+    padding: 0.5rem;
+    color: var(--color-main-blue);
+}
+
+/* Stare eroare (aplicată dinamic din JS, ca la celelalte câmpuri) */
+.custom-select.border-red-500 {
+    @apply border-red-500;
+}

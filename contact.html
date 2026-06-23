@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <include src="partials/head-links.html"></include>
+
+    <title>Brigada Electrică - Contact</title>
+</head>
+<body>
+    <include src="partials/navbar.html"></include>
+
+
+    <section class="bg-main-blue px-6 py-14 md:py-20 lg:px-12 text-center border-b-4 border-main-gold">
+        <p class="text-main-gold font-semibold text-sm uppercase  mb-4 animation-fade-in duration-300">
+            Date de contact
+        </p>
+        <h1 class="font-bold text-white section-header-size mb-4 animation-fade-in duration-400">
+            Contactați Brigada Electrică
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl lg:w-2/3 mx-auto leading-relaxed animation-fade-in duration-500">
+            Societate autorizată ANRE pentru execuția de instalații electrice.
+            Vă răspundem în cel mai scurt timp, în baza informațiilor transmise.
+        </p>
+    </section>
+
+    <main>
+        <form class="p-10 grid gap-4" action="">
+            <div>
+                <label class="font-poppins font-medium" for="name">Nume *</label><br>
+                <input type="text" name="name" id="name" placeholder="Numele dumneavoastră"
+                    class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                ></input><br>
+            </div>
+
+            <div>
+                <label class="font-poppins font-medium" for="telefon">Telefon *</label><br>
+                <input type="tel" name="telefon" id="telefon" placeholder="Nr. telefon"
+                    class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                ></input><br>
+            </div>
+            
+            <div>
+                <label class="font-poppins font-medium" for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Email (optional)"
+                    class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                ></input><br>
+            </div>
+
+            <div>
+                <label class="font-poppins font-medium" for="interes">Ce vă interesează *</label><br>
+                <div class="custom-select-wrapper">
+                    <select class="custom-select" name="interes" id="interes">
+                        <option value="" disabled selected>Alegeți o opțiune</option>
+                        <option value="reparații & mentenanță">Reparații & mentenanță</option>
+                        <option value="tablou electric">Tablou electric nou</option>
+                        <option value="iluminat inteligent">Iluminat inteligent</option>
+                        <option value="urgență">Urgentă electrică</option>
+                        <option value="altceva">Altceva</option>
+                    </select>
+                    <p class="form-error hidden text-sm text-red-600 mt-1">Vă rugăm selectați o opțiune.</p>
+                </div>
+            </div>
+            
+            <div>
+                <label class="font-poppins font-medium" for="oras">Oraș / Cartier</label><br>
+                <input type="text" name="oras" id="oras" placeholder="ex: Copou, Iași"
+                    class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                ></input><br>
+            </div>
+
+            <div>
+              <label for="mesaj" class="block font-medium text-main-blue mb-1.5">Detalii (opțional)</label>
+              <textarea id="mesaj" name="mesaj" rows="4"
+                class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-main-blue focus:outline-none transition-colors resize-none"
+                placeholder="Descrieți pe scurt problema sau ce aveți nevoie..."></textarea>
+            </div>
+            
+            <div class="flex items-start gap-2">
+              <input type="checkbox" id="gdpr" name="gdpr" required class="mt-1 accent-main-blue">
+              <label for="gdpr" class="text-sm text-gray-500">
+                Sunt de acord ca datele mele să fie folosite pentru a fi contactat în legătură cu această solicitare. *
+              </label>
+            </div>
+            <p id="gdpr-error" class="form-error hidden text-sm text-red-600">Te rugăm să confirmi acordul pentru a continua.</p>
+
+            <button type="submit"
+              class="w-full btn-primary bg-main-gold text-main-white font-semibold py-3.5 rounded-xl hover:shadow-2xl transition-colors text-lg">
+              Trimite solicitarea
+            </button>
+
+        </form>
+    </main>
+</body>
+<script type="module" src="/src/scripts/main.ts"></script>
+</html>
