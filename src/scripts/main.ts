@@ -21,6 +21,22 @@ const serviciiPageTitle = document.getElementById("servicii-title");
 const contactLink = document.getElementById("contact");
 const contactFooter = document.getElementById("contact-footer");
 
+
+const footerYear = document.getElementById('year'); 
+if (footerYear != null)
+{
+    footerYear.textContent = (new Date().getFullYear()).toString();
+}
+
+addScrollToElement(serviciiLink, serviciiPageTitle);
+addScrollToElement(homeLink, homePageTitle);
+// addScrollToElement(heroButton, servicesSection);
+addScrollToElement(heroButton, lastSection);
+addScrollToElement(contactLink, contactFooter);
+
+// Check and fix bug with last section
+hideSection(lastSection, bottomStickyBar);
+
 function addScrollToElement(link : HTMLElement | null, element : HTMLElement | null)
 {
     if (element != null)
@@ -35,16 +51,3 @@ function addScrollToElement(link : HTMLElement | null, element : HTMLElement | n
     }
 }
 
-addScrollToElement(serviciiLink, serviciiPageTitle);
-addScrollToElement(homeLink, homePageTitle);
-// addScrollToElement(heroButton, servicesSection);
-addScrollToElement(heroButton, lastSection);
-addScrollToElement(contactLink, contactFooter);
-
-hideSection(lastSection, bottomStickyBar);
-
-const footerYear = document.getElementById('year'); 
-if (footerYear != null)
-{
-    footerYear.textContent = (new Date().getFullYear()).toString();
-}

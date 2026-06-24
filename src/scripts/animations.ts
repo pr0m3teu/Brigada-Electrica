@@ -32,6 +32,8 @@ export function fadeIn(elements: NodeList) : void
 // Needs refactoring maybe
 export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTMLElement | null) : void
 {
+    if (conditionElem == null) return;
+    
     const options = {
         root: null,
         threshold: 0.1,
