@@ -114,7 +114,6 @@
     appearance-none;
 }
 
-/* Săgeată custom, în culorile brandului */
 .custom-select-wrapper::after {
     content: "";
     position: absolute;
@@ -134,18 +133,15 @@
     border-color: var(--color-main-gold);
 }
 
-/* Stare disabled/placeholder mai discretă */
 .custom-select option[disabled] {
     color: #9ca3af;
 }
 
-/* Stilizare minimă pentru opțiunile din dropdown (suport variabil pe browsere) */
 .custom-select option {
     padding: 0.5rem;
     color: var(--color-main-blue);
 }
 
-/* Stare eroare (aplicată dinamic din JS, ca la celelalte câmpuri) */
 .custom-select.border-red-500 {
     @apply border-red-500;
 }
