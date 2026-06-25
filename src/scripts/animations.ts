@@ -59,3 +59,18 @@ export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTM
 
     observer.observe(conditionElem as Element);
 }
+
+
+export function addScrollToElement(link : HTMLElement | null, element : HTMLElement | null)
+{
+    if (element != null)
+    {
+        if (link?.hasAttribute("href")) link?.removeAttribute("href");
+
+        link?.addEventListener("click", () => {
+            element?.scrollIntoView({
+                behavior: "smooth"
+            });
+        })
+    }
+}
