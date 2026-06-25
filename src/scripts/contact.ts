@@ -1,5 +1,6 @@
 
 const form = document.getElementById("contact-form") as HTMLFormElement;
+const formSucces = document.getElementById("form-success") as HTMLElement;
 
 interface SignupFormData {
   name: string;
@@ -65,7 +66,7 @@ function validateField(fieldName : keyof SignupFormData, formData: SignupFormDat
 }   
 
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const fieldNames = Object.keys(validators);
@@ -73,6 +74,41 @@ form.addEventListener("submit", (event) => {
     const result = fieldNames.map(fieldName => {
         return validateField(fieldName as keyof SignupFormData, form.data);
     });
-    console.log(result);
+
+    const isValid = result.every(Boolean);
+
+    if (!isValid) return;
+
+
+    const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    
+    if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Se trimite...';
+    }
+    
+    try {
+        const result = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
+        });
+
+        if (result.ok) {
+
+            console.log(formSucces);
+            formSucces?.classList.remove("hidden");
+        }
+        else {
+            throw new Error("Eroare la trimitere");
+        }
+    } 
+    finally {
+        if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = "Transmiteți solicitarea";
+        }
+    }
+    
 
 });
