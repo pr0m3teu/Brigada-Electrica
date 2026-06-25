@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /private/
+
+Sitemap: https://brigadaelectrica.ro/sitemap.xml
