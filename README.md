@@ -1,5 +1,5 @@
 # Brigada Electrica
 
-Official website for **Brigada Electrica** - Instalatii electrice si smart home in Iasi.
+Official website for **Brigada Electrica** - Instalații electrice și smart home în Iași.
 
-> Puterea Sigurantei, Energia Viitorului.
+Puterea Siguranței, Energia Viitorului.

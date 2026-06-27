@@ -10,11 +10,14 @@
   },
   "devDependencies": {
     "@types/node": "^25.3.0",
+    "@vituum/vite-plugin-posthtml": "^2.0.1",
+    "posthtml-expressions": "^1.11.4",
+    "posthtml-include": "^2.0.1",
     "typescript": "~5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^8.0.16"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "@tailwindcss/vite": "^4.3.1",
+    "tailwindcss": "^4.3.1"
   }
 }

@@ -1,0 +1,70 @@
+
+    <!-- Footer -->
+    <footer class="px-6 py-5 bg-main-blue grid lg:grid-cols-3 grid-rows-1">
+      <!-- Brigada Electrica -->
+      <div class="md:pr-10 lg:pr-16">
+        <h4 class="text-2xl font-semibold text-main-white">Brigada Electrică</h4>
+        <p class="text-main-gray mt-2 mb-4">
+          Puterea Siguranței, Energia Viitorului
+        </p>
+
+        <p class="leading-relaxed text-sm font-light text-main-gray mb-4">
+          Siguranță și eficiență în instalații electrice interioare și exterioare.
+          Oferim proiectare, execuție, modificări și reparații pentru locuințe, spații comerciale și industriale.
+        </p>
+
+        <div class="flex content-center my-2">
+          <a href="{{ facebook }}">
+            <img src="./assets/png/facebook.png" alt="facebook " class="w-8 mr-1.5">
+          </a>
+          <a href="{{ instagram }}">
+            <img src="./assets/png/instagram.png" alt="instagram" class="w-8 mr-1.5">
+          </a>
+          <a href="{{ tiktok }}">
+            <img src="./assets/png/tiktok.png" alt="tiktok" class="w-8 mr-1.5">
+          </a>
+        </div>
+      </div>
+
+      <!-- Linkuri rapide -->
+      <div>
+        <div class="mt-4 lg:mt-0">
+          <h4 class="text-xl text-main-white font-semibold mb-3">Link-uri rapide</h4>
+          <ul class="text-main-white">
+            <li class="link-rapid"><a id="home-link" href="index.html"> Acasă </a></li>
+            <li class="link-rapid"><a id="servicii-link" href="servicii.html"> Servicii </a></li>
+            <li class="link-rapid"><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Contact -->
+      <div id="contact-footer" class="mt-4 lg:mt-0">
+        <h4 class="text-xl text-main-white font-semibold mb-3">Contact</h4>
+        <ul class="text-main-white">
+          <li class="mb-2 text-main-gray flex content-center">
+            <img src="/assets/png/phone.png" alt="telefon" class="w-6">
+            <a href="tel:{{ telefonHref }}" class="text-md ml-1.5">0740 543 785</a>
+          </li>
+
+          <li class="mb-2 text-main-gray flex content-center">
+            <img src="/assets/png/whatsapp.png" alt="whatsapp" class="w-6">
+            <a href="{{ whatsapp }}" target="_blank" rel="noopener" class="text-md ml-1.5">Whatsapp</a>
+          </li>
+
+          <li class="mb-2 text-main-gray flex content-center">
+            <img src="/assets/png/email.png" alt="e-mail" class="w-6">
+            <a href="mailto:{{ email }}" class="text-md ml-1.5">{{ email }}</a>
+          </li>
+          <li class="text-main-gray flex content-center">
+            <img src="/assets/svg/location.svg" alt="locatie" class="w-6">
+            <p class="text-md ml-1.5">Județul Iași</p>
+          </li>
+        </ul>
+      </div>
+      <div class="border-t lg:col-span-3 border-white/10 mt-4">
+        <p class="text-center text-main-white text-xs lg:text-sm pt-4">
+          © <span id="year"></span> Brigada Electrică. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>

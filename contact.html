@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <include src="partials/head-links.html"></include>
+
+    <title>Brigada Electrică - Contact</title>
+</head>
+<body>
+    <include src="partials/navbar.html"></include>
+
+    <!-- Hero -->
+    <section class="bg-main-blue px-6 py-14 md:py-20 lg:px-12 text-center border-b-4 border-main-gold">
+        <p class="text-main-gold font-semibold text-sm uppercase  mb-4 animation-fade-in duration-300">
+            Date de contact
+        </p>
+        <h1 class="font-bold text-white section-header-size mb-4 animation-fade-in duration-400">
+            Contactați Brigada Electrică
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl lg:w-2/3 mx-auto leading-relaxed animation-fade-in duration-500">
+            Societate autorizată ANRE pentru execuția de instalații electrice.
+            Vă răspundem în cel mai scurt timp, în baza informațiilor transmise.
+        </p>
+    </section>
+
+    
+
+    <main class="grid lg:grid-cols-2 lg:gap-12">
+        <div class="p-10">
+            <h2 class="text-2xl font-semibold mb-4">Trimiteți-ne detalii</h2>
+            <p class="text-lg text-gray-600 mb-8">Completați formularul și vă contactăm noi în cel mai scurt timp.</p>
+            <form id="contact-form" class="grid gap-4" 
+                action="https://formspree.io/f/xgojavkq"
+                method="POST">
+                
+                <div>
+                    <label class="font-poppins font-medium" for="name">Nume *</label><br>
+                    <input type="text" name="name" id="name" placeholder="Numele dumneavoastră"
+                        class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                    ></input><br>
+                    <p id="nameError" class="text-sm text-red-600 mt-1"></p>
+                </div>
+
+                <div>
+                    <label class="font-poppins font-medium" for="telefon">Telefon *</label><br>
+                    <input type="tel" name="telefon" id="telefon" placeholder="Nr. telefon"
+                        class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                    ></input><br>
+                    <p id="telefonError" class="text-sm text-red-600 mt-1"></p>
+                </div>
+                
+                <div>
+                    <label class="font-poppins font-medium" for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Email (optional)"
+                        class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                    ></input><br>
+                    <p id="emailError" class="text-sm text-red-600 mt-1"></p>
+                </div>
+
+                <div>
+                    <label class="font-poppins font-medium" for="interes">Ce vă interesează *</label><br>
+                    <div class="custom-select-wrapper">
+                        <select class="custom-select" name="interes" id="interes">
+                            <option value="" disabled selected>Alegeți o opțiune</option>
+                            <option value="reparații & mentenanță">Reparații & mentenanță</option>
+                            <option value="tablou electric">Tablou electric nou</option>
+                            <option value="iluminat inteligent">Iluminat inteligent</option>
+                            <option value="urgență">Urgentă electrică</option>
+                            <option value="altceva">Altceva</option>
+                        </select>
+                        <p id="interesError" class="text-sm text-red-600 mt-1"></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="font-poppins font-medium" for="oras">Oraș / Cartier</label><br>
+                    <input type="text" name="oras" id="oras" placeholder="ex: Copou, Iași"
+                        class="border-2 px-4 py-1.5 rounded-xl mt-2 w-full"
+                    ></input><br>
+                    
+                </div>
+
+                <div>
+                <label for="detalii" class="block font-medium text-main-blue mb-1.5">Detalii (opțional)</label>
+                <textarea id="detalii" name="detalii" rows="4"
+                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-main-blue focus:outline-none transition-colors resize-none"
+                    placeholder="Descrieți pe scurt problema sau ce aveți nevoie..."></textarea>
+                    <p id="detaliiError" class="text-sm text-red-600 mt-1"></p>
+                </div>
+                
+                <div class="flex items-start gap-2">
+                <input type="checkbox" id="gdpr" name="gdpr" required class="mt-1 accent-main-blue">
+                <label for="gdpr" class="text-sm text-gray-500">
+                    Sunt de acord ca datele mele să fie folosite pentru a fi contactat în legătură cu această solicitare. *
+                </label>
+                </div>
+                <p id="gdpr-error" class="form-error hidden text-sm text-red-600">Te rugăm să confirmi acordul pentru a continua.</p>
+
+                <button type="submit"
+                class="w-full btn-primary bg-main-blue text-main-white font-semibold py-3.5 rounded-lg hover:shadow-xl transition-colors text-lg border-2 border-main-blue hover:bg-main-blue-800">
+                    Transmiteți solicitarea
+                </button>
+
+                <p id="form-success" class="hidden text-center text-main-blue font-semibold bg-main-blue/5 border border-main-blue/20 py-3 rounded-lg">
+                <i class="fa-solid fa-circle-check mr-1 text-main-gold"></i>
+                    Solicitarea a fost înregistrată. Vă vom contacta în cel mai scurt timp, în limitele programului de lucru.
+                </p>
+
+
+                <input type="hidden" name="_subject" value="Solicitare nouă — Brigada Electrică">
+                <input type="text" name="_gotcha" style="display:none">
+            </form>
+        </div>
+
+        <div class="mx-6 my-10 py-8 px-6 bg-main-blue lg:p-16 lg:py-12 rounded-2xl h-fit lg:mt-20">
+            <div class="my-4">
+              <h3 class="text-main-white text-lg font-bold mb-3 flex items-center gap-2">
+                <i class="fa-regular fa-clock text-main-gold"></i> Program
+              </h3>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li class="flex justify-between"><span>Luni - Vineri</span><span>08:00 - 19:00</span></li>
+                <li class="flex justify-between"><span>Sâmbătă</span><span>09:00 - 14:00</span></li>
+                <li class="flex justify-between"><span>Duminică</span><span>Doar urgențe</span></li>
+              </ul>
+            </div>
+
+            <hr class="border-white/10">
+
+            <div class="my-4">
+              <h3 class="text-main-white text-lg font-bold mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-main-gold"></i> Zonă deservită
+              </h3>
+              <p class="text-gray-300 text-sm">
+                Iași și împrejurimi: Copou, Tătărași, Păcurari, Nicolina, Dacia,
+                Bucium și comunele limitrofe.
+              </p>
+            </div>
+        </div>
+
+    </main>
+
+    <include src="partials/footer.html"></include>
+</body>
+<script type="module" src="/src/scripts/main.ts"></script>
+<script type="module" src="/src/scripts/contact.ts"></script>
+</html>

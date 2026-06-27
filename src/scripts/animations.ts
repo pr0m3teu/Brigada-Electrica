@@ -32,6 +32,8 @@ export function fadeIn(elements: NodeList) : void
 // Needs refactoring maybe
 export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTMLElement | null) : void
 {
+    if (conditionElem == null) return;
+    
     const options = {
         root: null,
         threshold: 0.1,
@@ -56,4 +58,19 @@ export function hideSection(conditionElem : HTMLElement | null, elemToHide : HTM
     }, options);
 
     observer.observe(conditionElem as Element);
+}
+
+
+export function addScrollToElement(link : HTMLElement | null, element : HTMLElement | null)
+{
+    if (element != null)
+    {
+        if (link?.hasAttribute("href")) link?.removeAttribute("href");
+
+        link?.addEventListener("click", () => {
+            element?.scrollIntoView({
+                behavior: "smooth"
+            });
+        })
+    }
 }
