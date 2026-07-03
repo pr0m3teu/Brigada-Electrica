@@ -154,7 +154,7 @@
 
     .section-header-size {
         @apply
-        text-4xl md:text-5xl lg:text-5xl
+        text-4xl md:text-5xl lg:text-6xl
     }
 
     .link-rapid {
@@ -200,12 +200,11 @@
 .custom-select {
     @apply
     w-full px-4 py-3 pr-11
-    rounded-lg border-2 border-gray-200
-    bg-main-white text-main-blue
+    rounded-xl border-2 border-main-gold
+    bg-main-white
     font-medium text-base
-    cursor-pointer
-    transition-colors duration-300
-    focus:border-main-blue focus:outline-none
+    cursor-pointer focus:outline-none
+    focus:border-main-gold
     appearance-none;
 }
 
