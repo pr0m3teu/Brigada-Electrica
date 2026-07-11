@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets"
+import electricianJpg from "../assets/jpg/electrician.jpg" 
+import qualityPng from "../assets/png/quality.png"
+import safetyPng from "../assets/png/safety.png"
+import progressPng from "../assets/png/progress.png"
+import communicationPng from "../assets/png/communication.png"
+
+
+---
+
+<!-- De ce sa alegi brigada electrica -->
+<section class="bg-main-blue-700 px-6 py-20 space-y-6 grid gap-10 md:gap-8 md:grid-cols-2 md:grid-rows-1 md:px-7 lg:pr-12 lg:pl-8">
+    <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group order-last lg:order-first  duration-500">
+    <Image src={electricianJpg} alt="eletrician lucrand" loading="lazy"
+    class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0"/>
+    
+    <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-2 md:p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
+        <div class="flex items-center gap-3 md:gap-4">
+            <div class="w-10 h-10 bg-main-blue-400 rounded-full flex items-center justify-center text-brand-red shrink-0">
+                <i class="fa-solid fa-certificate text-blue-950"></i>
+            </div>
+
+            <div class="absolute inset-0 bg-linear-to-t to-transparent"></div>
+
+            <div>
+                <p class="font-semibold text-main-blue text-sm">Standardul Premium în electricitate.</p>
+                <p class="text-xs font-light text-gray-500">Siguranță absolută și tehnologie smart, integrate impecabil în casa ta.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div>
+    <h2 class="section-header-size text-main-blue-50 font-semibold mb-8  duration-500">
+        De ce să alegi <br> Brigada Electrică?
+    </h2>
+    <ul class="grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-2 gap-3 gap-y-5 lg:gap-y-8 duration-600">
+        <li>
+        <Image src={qualityPng} alt="calitate" class="w-12 rounded-2xl bg-main-blue p-1.5 mb-2"/>
+        <p class="text-main-white text-xl mb-2">Calitate reală</p>
+        <p class="text-gray-300">
+            Lucrăm doar cu materiale certificate și respectăm normele tehnice în vigoare.
+            Fiecare circuit este calculat și verificat.
+        </p>
+        </li>
+        <li>
+        <Image src={safetyPng} alt="siguranță" class="w-12 rounded-2xl bg-main-blue p-1.5 mb-2"/>
+        <p class="text-main-white text-xl mb-2">Siguranță și încredere</p>
+        <p class="text-gray-300">
+            Respectăm normele, lucrăm responsabil și livrăm exact ce promitem.
+        </p>
+        </li>
+        <li>
+        <Image src={progressPng} alt="ultimă generație" class="w-12 rounded-2xl bg-main-blue p-1.5 mb-2"/>
+        <p class="text-main-white text-xl mb-2">Soluții de ultimă generație </p>
+        <p class="text-gray-300">Integram tehnologii moderne și sisteme smart pentru eficiență energetică și control inteligent.</p>
+        </li>
+        <li>
+        <!-- TODO: !!! schimba culoare iconita comunicare  -->
+        <Image src={communicationPng} alt="comunicare" class="w-12 rounded-2xl bg-main-blue p-1.5 mb-2"/>
+        <p class="text-main-white text-xl mb-2">Comunicare clară</p>
+        <p class="text-gray-300">Primești ofertă transparentă, explicații tehnice clare și fără costuri ascunse.</p>
+        </li>
+    </ul>
+    </div>
+</section>  

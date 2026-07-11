@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+
+@tailwind utilities;
+
+@theme {
+    --color-main-blue: #0c1827;
+    --color-main-blue-50: #ebf2f9;
+    --color-main-blue-100: #d8e4f3;
+    --color-main-blue-200: #b1c9e7;
+    --color-main-blue-300: #8aaedb;
+    --color-main-blue-400: #6394cf;
+    --color-main-blue-500: #3c79c3;
+    --color-main-blue-600: #30619c;
+    --color-main-blue-700: #244875;
+    --color-main-blue-800: #18304e;
+    --color-main-blue-900: #0c1827;
+    --color-main-blue-950: #08111b;
+    --color-secondary-blue: #2596be;
+    --color-light-blue: #AADCEE;
+
+    --color-main-white: #F9FAFB;
+    
+    --color-main-gray: #EFF1ED;
+    --color-secondary-gray: rgb(120, 136, 159);
+    
+    --color-main-gold: #81714B;
+    --color-secondary-gold: #C3B698;
+
+    --color-main-yellow: #ffcc00;
+    --color-secondary-yellow: #FFE270;
+
+}
+
+
+@layer base {
+    h1, h2, h3, h4 {
+        @apply font-montserrat;
+    }   
+}
+
+
+@theme inline {
+    --font-montserrat: var(--font-montserrat);
+    --font-poppins: var(--font-poppins);
+}
+
+
+@layer components {
+    .btn-primary {
+        @apply
+        transition-all duration-500 ease-out
+        hover:shadow-xl
+        hover:-translate-y-0.5
+        active:translate-y-0
+        active:scale-[0.98]
+    }
+
+    .main-service-li {
+        @apply
+        flex items-center gap-3 rounded-lg py-2 lg:py-2
+    }
+    
+    .main-service-p {
+        @apply
+        text-black text-sm md:text-lg lg:text-xl
+    }
+
+    .animation-fade-in {
+        @apply
+        opacity-0 translate-y-12 transition-all ease-out
+    }
+
+    .section-header-size {
+        @apply
+        text-4xl md:text-5xl lg:text-6xl
+    }
+
+    .link-rapid {
+        @apply
+        mb-1 text-main-gray hover:text-gray-400 w-fit
+    }
+
+    .title-servicii-card {
+        @apply
+        text-center mt-2 mb-3 text-2xl font-semibold md:mb-5 lg:text-4xl lg:text-left text-main-blue
+    }
+
+    .description-servicii-card {
+        @apply
+        text-sm text-gray-500 mb-6 text-center font-medium md:mb-8 lg:text-left lg:text-xl
+    }
+
+    .li-servicii-section {
+        @apply
+        flex items-center my-1
+    }
+    
+    .p-li-servicii-section {
+        @apply
+        text-sm md:text-lg ml-1 text-gray-600
+    }
+
+}
+
+
+@layer components {
+    .tag-li {
+        @apply
+        text-xl px-4 py-6 border-2 rounded-xl border-gray-400 text-main-blue lg:text-center cursor-pointer lg:shadow-xl
+    }
+
+    .servici-section {
+        @apply
+        p-4 py-8
+        lg:px-16 py-12
+    }
+
+    .servici-title {
+        @apply
+        text-3xl lg:text-4xl font-semibold mb-3 text-main-blue-900
+    }
+
+    .servici-description {
+        @apply
+        mb-6 text-xl lg:text-xl text-gray-600
+        lg:max-w-4xl
+    }
+
+    .servici-problem {
+        @apply
+        text-lg flex gap-2 py-2 text-main-blue-900
+    }
+    .servici-cta {
+        @apply
+        inline-block mt-6 text-main-blue-50 font-montserrat font-semibold px-5 py-3 rounded-2xl
+        lg:w-fit
+    }
+
+    .serivicii-description>div {
+        @apply
+        p-4
+    }
+}
