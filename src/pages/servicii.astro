@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="ro">
-  <head>
-    <meta name="description" content="Servicii complete de electrician în Iași: instalații electrice noi, reparații tablouri electrice, mentenanță și case inteligente. Cere ofertă gratuită.">
-    <include src="partials/head-links.html"></include>
-    <title>Brigada Electrică - Servicii</title>
-  </head>
+---
+import MainLayout from "../layouts/MainLayout.astro"
+import Trust from "../components/Trust.astro"
+import "../styles/global.css"
+import { Image } from "astro:assets"
+import phonePng from "../assets/png/phone.png"
 
-<body class="bg-main-white font-poppins">
-    <!-- Navbar -->
-    <include src="partials/navbar.html"></include>
+const pageDescription = "Servicii complete de electrician în Iași: instalații electrice noi, reparații tablouri electrice, mentenanță și case inteligente. Cere ofertă gratuită.";
 
-    <!-- Sticky bottom bar -->
-    <div id="bottom-sticky-bar" class="bg-main-blue z-1 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-2 ">
+---
 
-        <div class="flex items-center justify-center">
-          <a href="https://wa.me/40740543785" 
-          class="inline-flex justify-center items-center text-sm w-full gap-1 py-2 px-1 border-2 
-              border-green-600 text-green-600 font-semibold rounded-xl hover:shadow-2xl">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-          </a>
-        </div>
-
-        <button class="text-main-white bg-main-gold
-          py-2 px-1 text-sm rounded-xl gap-1 
-          flex items-center justify-center
-          cursor-pointer btn-primary"
-          onclick="window.location.href='tel:+40740543785'">
-
-          <img src="./assets/png/phone.png" alt="telefon icon" class="w-4">
-          <span class="font-medium "> Sună acum! </span>      
-        </button>
-    </div>
+<MainLayout pageDescription={pageDescription}>
 
     <section id="servicii-title" 
         class="scroll-mt-20 px-6 text-center pt-24 pb-20 space-y-6 min-h-[45vh]
-        lg:px-12  bg-[url(/assets/jpg/bg.jpg)] 
+        lg:px-12  bg-[url(../assets/jpg/bg.jpg)] 
         bg-main-blue bg-center bg-cover bg-blend-overlay">
 
         <p class="text-main-blue-400 font-semibold text-sm uppercase  mb-4 animation-fade-in duration-300">
@@ -49,37 +27,7 @@
         </p>
     </section>
 
-    
-    <!-- Trust Section -->
-    <include src="partials/trust-section.html"></include>
-
-
-    <!-- <section class="my-10 mx-3 py-12 px-5 bg-main-white border-2 border-main-blue-600 shadow-xl lg:mx-16 lg:px-12 rounded-2xl">
-      
-      <h2 class="text-3xl text-main-blue font-semibold px-2 mb-8"> Cu ce vă putem ajuta?</h2>
-
-      <ul class="grid lg:grid-cols-3 gap-4 lg:gap-8">
-        <li class="tag-li">
-          Urgență electrică
-        </li>
-        <li class="tag-li">
-          Instalație nouă
-        </li>
-        <li class="tag-li">
-          Tablou electric
-        </li>
-        <li class="tag-li">
-          Smart Home
-        </li>
-        <li class="tag-li">
-          Iluminat
-        </li>
-        <li class="tag-li">
-          Verificare
-        </li>
-      </ul>
-    </section> -->
-    
+    <Trust/>
 
     <main id="serivicii-description" class="my-10  bg-main-white rounded-2xl">
       
@@ -241,7 +189,7 @@
               cursor-pointer md:w-fit btn-primary border-main-white border-2"
               onclick="window.location.href='tel:+40740543785'">
 
-              <img src="./assets/png/phone.png" alt="telefon icon" class="w-4.5 md:w-6">
+              <Image src={phonePng} alt="telefon icon" class="w-4.5 md:w-6"/>
               <span class="ml-1 lg:ml-1.5 font-semibold">0740 543 785</span>      
           </button>
           <!-- TODO: Fix animation color change and what not -->
@@ -256,11 +204,4 @@
         </div>
     </section>
     
-    
-    <!-- Footer -->
-    <include src="partials/footer.html"></include>
-  </body>
-  <script type="module" src="/src/scripts/main.ts"></script>
-</html>
-
-<!-- TODO: Solve bug where year doesn't appear in servicii.html footer -->
+</MainLayout>

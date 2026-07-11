@@ -1,43 +1,26 @@
-<!DOCTYPE html>
-<html lang="ro">
-  <head>
-    
-    <meta name="description" content="Brigada Electrică – instalații electrice, reparații, mentenanță și soluții smart home în Iași. 
-    Intervenție rapidă, siguranță garantată. Sună acum: 0740 543 785.">
-    <include src="partials/head-links.html"></include>
-    <title>Brigada Electrică - Instalații Electrice în Iași</title>
-  </head>
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Trust from '../components/Trust.astro'
+import DeCeNoi from "../components/DeCeNoi.astro"
+import "../styles/global.css"
+import { Image } from 'astro:assets'
 
-  <body class="bg-main-white font-poppins">
-    
-    <include src="partials/navbar.html"></include>
+import lightBulbSvg from "../assets/svg/lighbulb.svg"
+import phonePng from "../assets/png/phone.png"
+import prizaPng from "../assets/jpg/poza-priza.jpg"
+import checkPng from "../assets/png/check.png"
+import boltSvg from "../assets/svg/bolt.svg"
+import smartlightPng from "../assets/png/smart-light.png"
+import smarthomePng from  "../assets/png/smart-home.png"
+import smarttabletPng from "../assets/jpg/smart-tablet.jpg"
 
-    <!-- Sticky bottom bar -->
-    <div id="bottom-sticky-bar" class="bg-main-blue z-1 w-full grid grid-cols-2 gap-3 fixed bottom-0 left-0 right-0 md:hidden px-3 py-2">
+const description = "Brigada Electrică – instalații electrice, reparații, mentenanță și soluții smart home în Iași. Intervenție rapidă, siguranță garantată. Sună acum: 0740 543 785."
 
-        <div class="flex items-center justify-center">
-          <a href="https://wa.me/40740543785" 
-          class="inline-flex justify-center items-center text-sm w-full gap-1 py-2 px-1 border-2 
-              border-green-600 text-green-600 font-semibold rounded-xl hover:shadow-2xl">
-            <i class="fa-brands fa-whatsapp" loading="lazy"></i>
-            WhatsApp
-          </a>
-        </div>
+---
 
-        <button class="text-main-white bg-main-gold
-          py-2 px-1 text-sm rounded-xl gap-1 
-          flex items-center justify-center
-          cursor-pointer btn-primary"
-          onclick="window.location.href='tel:+40740543785'">
-
-          <img src="./assets/png/phone.png" alt="telefon icon" class="w-4">
-          <span class="font-medium "> Sună acum! </span>      
-        </button>
-    </div>
-
-    <!-- Hero Section -->
+<MainLayout pageDescription={description}>
     <section id="home-title" 
-      class="bg-main-blue-950 bg-[url(/assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h-[50vh]
+      class="bg-main-blue-950 bg-[url(../assets/jpg/bg.jpg)] bg-center bg-cover bg-blend-overlay min-h-[50vh]
       pt-24 pb-20 px-5 text-center scroll-m-30 space-y-6 
       lg:py-16 lg:px-12 md:text-left" >
 
@@ -55,46 +38,44 @@
       <div class="w-fit mx-auto items-center place-items-center gap-4 mt-5 md:flex md:gap-6 lg:mx-0">
         <button id="hero-button1" class="text-main-white bg-main-blue-700 
           py-2 px-6 text-lg lg:py-3.5 w-full lg:text-xl rounded-3xl
-          flex items-center justify-center animation-fade-in duration-500
+          flex items-center justify-center  
           cursor-pointer md:w-fit lg:btn-primary">
 
-          <img src="./assets/svg/lighbulb.svg" fetchpriority="low" alt="lightbulb icon" class="w-5 font-medium md:w-6">
+          <img src={lightBulbSvg.src} fetchpriority="low" alt="lightbulb icon" class="w-5 font-medium md:w-6">
           <span class="ml-1 lg:ml-1.5 font-medium"> Vreau o casă smart </span>      
         </button>      
 
         <button class="text-main-white bg-main-gold hidden
           py-2 px-3 text-lg lg:py-3.5 lg:px-6 lg:text-xl rounded-3xl 
-          md:flex items-center justify-center animation-fade-in duration-600
+          md:flex items-center justify-center  
           cursor-pointer md:w-fit btn-primary"
           onclick="window.location.href='tel:+40740543785'">
 
-          <img src="./assets/png/phone.png" fetchpriority="low" alt="telefon icon" class="w-4.5 md:w-6">
+          <img src={phonePng.src} fetchpriority="low" alt="telefon icon" class="w-4.5 md:w-6">
           <span class="ml-1 lg:ml-1.5 font-medium"> Ai o urgență? Sună acum! </span>      
         </button>
       
       </div>
     </section>
 
-    
-    <!-- Trust Section -->
-    <include src="partials/trust-section.html"></include>
+	<Trust/>
 
-    <!-- Problemă → Agitare Section -->
+<!-- Problemă → Agitare Section -->
     <section class="bg-main-blue-950 px-6 py-16 text-center space-y-6 md:py-20 lg:px-12 md:text-left">
-      <p class="bg-main-gold/20 w-fit mx-auto md:mx-0 text-main-gold font-semibold text-md py-1 px-4 rounded-2xl animation-fade-in duration-300">
+      <p class="bg-main-gold/20 w-fit mx-auto md:mx-0 text-main-gold font-semibold text-md py-1 px-4 rounded-2xl  ">
         Îți sună cunoscut?
       </p>
 
-      <h2 class="font-bold text-main-white section-header-size mb-4 animation-fade-in duration-400">
+      <h2 class="font-bold text-main-white section-header-size mb-4  ">
         Tabloul electric e vechi și nu-ți mai inspiră încredere?
       </h2>
 
-      <p class="text-gray-300 text-lg md:text-xl lg:text-2xl lg:w-2/3 mb-8 leading-relaxed animation-fade-in duration-500">
+      <p class="text-gray-300 text-lg md:text-xl lg:text-2xl lg:w-2/3 mb-8 leading-relaxed  ">
         Prizele se încălzesc, siguranțele sar des, fire vechi ascunse prin pereți de care nimeni nu mai știe nimic.
         Nu e doar incomod — <span class="font-bold text-main-white">e un risc real de incendiu și scurtcircuit.</span>
       </p>
 
-      <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 animation-fade-in duration-600">
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8  ">
         <li class="flex items-center gap-3 bg-main-blue-800/60 p-4 rounded-lg">
           <i class="fa-solid fa-triangle-exclamation text-main-gold text-xl shrink-0"></i>
           <p class="text-main-white text-sm md:text-base">Siguranțe care sar des</p>
@@ -113,27 +94,25 @@
         </li>
       </ul>
 
-      <p class="text-main-white text-lg md:text-xl font-semibold animation-fade-in duration-700">
+      <p class="text-main-white text-lg md:text-xl font-semibold  ">
         Rezolvăm asta rapid, fără șantier și fără mizerie — vezi mai jos cum.
       </p>
     </section>
-
-  
-    <!-- TODO: Add icons to each li -->
+  <!-- TODO: Add icons to each li -->
     <!-- Instalații Electrice section -->
     <main class="px-6 py-20 space-y-6 grid gap-4 md:grid-cols-2 md:grid-rows-1 md:px-7 lg:pl-12 lg:pr-8">
       <div class="h-full">
-        <h2 class="font-bold section-header-size mb-6  animation-fade-in duration-500">
+        <h2 class="font-bold section-header-size mb-6  ">
           Instalații Electrice
           <span class="text-main-gold">Sigure & Durabile</span>
         </h2>
-        <p class="text-md mb-8 text-gray-600 leading-relaxed lg:pr-4 md:text-lg lg:text-xl animation-fade-in duration-600">
+        <p class="text-md mb-8 text-gray-600 leading-relaxed lg:pr-4 md:text-lg lg:text-xl  ">
           Siguranța casei tale nu este un loc pentru improvizații. 
           Executăm lucrări electrice conform normativelor în vigoare, folosind materiale premium și scule profesionale. 
           Fără fire atârnate, fără mizerie, fără riscuri.
         </p>
         
-        <ul class="rounded-2xl grid grid-rows-4 gap-2 mb-6 px-2 md:px-4 lg:px-6 md:grid-cols-2 md:grid-rows-2 md:ml-0 md:justify-center  animation-fade-in duration-700">
+        <ul class="rounded-2xl grid grid-rows-4 gap-2 mb-6 px-2 md:px-4 lg:px-6 md:grid-cols-2 md:grid-rows-2 md:ml-0 md:justify-center   ">
           <li class="my-2">
             <h4 class="text-md lg:text-xl font-semibold ">Tablouri electrice</h4>
             <p class="text-sm text-gray-600 leading-relaxed">Schimbare siguranțe & modernizare panou.</p>
@@ -151,7 +130,7 @@
             <p class="text-sm text-gray-600 leading-relaxed">Identificare și reparație scurtcircuite.</p>
           </li>
         </ul>
-        <div class="flex items-center justify-center animation-fade-in duration-700">
+        <div class="flex items-center justify-center  ">
           <a href="https://wa.me/40740543785" 
           class="inline-flex justify-center items-center gap-1 px-8 py-4 border-2 
               border-green-500 text-green-600 font-bold rounded-xl hover:bg-green-50 transition-colors">
@@ -161,10 +140,8 @@
         </div>
       </div>
 
-      <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group  animation-fade-in duration-500">
-        <img src="./assets/jpg/poza-priza.jpg" alt="eletrician lucrand profesional in iasi" loading="lazy"
-        class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
-        
+      <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group   ">
+        <Image src={prizaPng} alt="eletrician lucrand profesional in iasi" class="absolute rounded-4xl shadow-2xl duration-700 h-full w-full object-cover transition  group-hover:scale-105 inset-0"/> 
         <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-brand-red">
             <div class="flex items-center gap-4">
                 <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-brand-red shrink-0">
@@ -182,7 +159,7 @@
       </div>
     </main>
 
-    <!-- Oferte servicii -->
+	<!-- Oferte servicii -->
     <section class="py-20 space-y-6 px-6 scroll-m-16 bg-main-white lg:px-20" id="servicii">
       <!-- Ce oferim -->
       <div class="flex flex-1 items-center justify-center mb-10">
@@ -191,29 +168,29 @@
         </p>
       </div>
 
-      <h2 class="text-main-blue text-center font-semibold mb-6 animation-fade-in duration-300 section-header-size">Servicii și pachete</h2>
-      <p class="mb-8 text-2xl text-center text-gray-500 animation-fade-in duration-400 lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
+      <h2 class="text-main-blue text-center font-semibold mb-6   section-header-size">Servicii și pachete</h2>
+      <p class="mb-8 text-2xl text-center text-gray-500   lg:text-3xl">Alege soluția potrivită pentru nevoile tale</p>
 
       <div class="grid grid-rows-3 gap-y-16 md:px-6 lg:grid-cols-3 lg:grid-rows-1 lg:gap-12 ">
       
         <!-- CARD 1 -->
-        <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full animation-fade-in duration-500 lg:duration-700 lg:py-10">
+        <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full lg:py-10">
           <div class="flex-1">
-            <img src="assets/svg/bolt.svg" alt="bolt" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-secondary-yellow/60 rounded-2xl">
+            <img src={boltSvg.src} alt="fulger" loading="lazy" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-secondary-yellow/60 rounded-2xl">
             <h3 class="title-servicii-card">Reparații Electrice</h3>
             <p class="description-servicii-card">Pentru problemele urgente.</p>
 
             <ul class="ml-1">
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Diagnostică scurcircuite</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Schimbare tablou electric vechi</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Prize, întrerupătoare, corpuri de iluminat</p>
               </li>
             </ul>
@@ -227,28 +204,28 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="py-6 px-6 rounded-xl shadow-2xl border-2 border-secondary-blue/60 flex flex-col h-full relative animation-fade-in duration-500 lg:duration-600 lg:py-10">
+        <div class="py-6 px-6 rounded-xl shadow-2xl border-2 border-secondary-blue/60 flex flex-col h-full relative   lg: lg:py-10">
 
           <div class="absolute top-0 right-0 bg-secondary-blue text-main-white px-4 py-1 text-sm rounded-bl-lg">
                 Cel mai popular
           </div>
 
           <div class="flex-1">
-            <img src="assets/png/smart-light.png" alt="smart light" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue rounded-2xl">
+            <img src={smartlightPng.src} alt="smart light" loading="lazy" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue rounded-2xl">
             <h3 class="title-servicii-card">Iluminat Inteligent</h3>
             <p class="description-servicii-card">Ideal pentru dormitor sau living.</p>
             
             <ul class="ml-1">
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Control lumini din telefon</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Păstrezi întrerupătoarele existente</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Adăugăm întrerupătoare wireless</p>
               </li>
             </ul>
@@ -262,23 +239,23 @@
         </div>
 
         <!-- CARD 3 -->
-        <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full animation-fade-in duration-500 lg:duration-800 lg:py-10">
+        <div class="py-6 px-6 rounded-xl shadow-2xl flex flex-col h-full   lg: lg:py-10">
           <div class="flex-1">
-            <img src="assets/png/smart-home.png" alt="smart home" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue/60 rounded-2xl">
+            <img src={smarthomePng.src} loading="lazy" alt="smart home" class="mx-auto lg:mx-0 w-10 h-10 p-3 mb-2.5 box-content bg-light-blue/60 rounded-2xl">
             <h3 class="title-servicii-card">Casă Complet Automatizată</h3>
             <p class="description-servicii-card">Control total + economie de energie.</p>
             
             <ul class="ml-1">
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Lumini + termostat</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Senzori prezență umană</p>
               </li>
               <li class="li-servicii-section">
-                <img src="./assets/png/check.png" alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
+                <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 h-5 mr-2">
                 <p class="p-li-servicii-section">Control vocal</p>
               </li>
             </ul>
@@ -293,42 +270,42 @@
       </div>
     </section>
 
-    <include src="partials/de-ce-noi.html"></include>
+	<DeCeNoi/>
 
-    <!-- Smart Lighting Section  -->
+	    <!-- Smart Lighting Section  -->
     <section  class="px-6 py-20 space-y-6 bg-main-white grid gap-10 md:gap-8 md:grid-cols-2 md:grid-rows-1 md:px-7 lg:pl-12 lg:pr-8">
       <div class="h-full">
-        <h2 class="font-semibold mb-6 section-header-size animation-fade-in duration-500">
+        <h2 class="font-semibold mb-6 section-header-size">
           Cum facem casa Smart fără să renovăm tot?
         </h2>
-        <p class="text-gray-600 text-xl leading-relaxed mb-8 animation-fade-in duration-600">
+        <p class="text-gray-600 text-xl leading-relaxed mb-8 ">
           Majoritatea oamenilor cred că automatizarea înseamnă șantier și cabluri noi. 
           <span class="font-bold">Fals.</span> <br>
           Folosim relee wireless de ultimă generație, montate invizibil în spatele prizelor sau întrerupătoarelor tale actuale.
         </p>
         
-        <ul class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-5xl mx-auto animation-fade-in duration-700">
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-5xl mx-auto">
           <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow">
-            <img src="./assets/png/check.png" alt="bifa" class="w-5 ml-2">
+            <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 ml-2">
             <p>Instalare invizibilă</p>
           </li>
           <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow">
-            <img src="./assets/png/check.png" alt="bifa" class="w-5 ml-2">
+            <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 ml-2">
             <p>Controlezi luminile din telefon sau voce</p>
           </li>
           <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow">
-            <img src="./assets/png/check.png" alt="bifa" class="w-5 ml-2">
+            <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 ml-2">
             <p>Montaj rapid ~30 minute / cameră</p>
           </li>
           <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow">
-            <img src="./assets/png/check.png" alt="bifa" class="w-5 ml-2">
+            <img src={checkPng.src} alt="bifa" loading="lazy" class="w-5 ml-2">
             <p>Testare și instruire completă</p>
           </li>
         </ul>
       </div>
-      <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group animation-fade-in duration-600">
-        <img src="/assets/jpg/smart-tablet.jpg" alt="smart-home" 
-        class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0">
+      <div class="h-full w-full relative flex justify-center min-h-100 rounded-2xl overflow-hidden shadow-xl group ">
+        <Image src={smarttabletPng} alt="smart-home" 
+        class="absolute rounded-4xl shadow-2xl h-full w-full object-cover transition duration-700 group-hover:scale-105 inset-0"/>
         
         <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-2 md:p-4 rounded-xl shadow-lg border-l-4">
             <div class="flex items-center gap-3">
@@ -361,7 +338,7 @@
               cursor-pointer md:w-fit btn-primary border-main-white border-2"
               onclick="window.location.href='tel:+40740543785'">
 
-              <img src="./assets/png/phone.png" alt="telefon icon" loading="lazy" class="w-4.5 md:w-6">
+              <img src={phonePng.src} alt="telefon icon" loading="lazy" class="w-4.5 md:w-6">
               <span class="ml-1 lg:ml-1.5 font-semibold">0740 543 785</span>      
           </button>
           <!-- TODO: Fix animation color change and what not -->
@@ -369,20 +346,11 @@
             <a href="https://wa.me/40740543785" 
             class="h-full w-full inline-flex justify-center items-center gap-1 px-2 py-2 lg:px-4 lg:py-2 border-2 text-md lg:text-xl
                 bg-green-600 text-main-white font-semibold rounded-2xl hover:bg-green-500 transition-colors">
-              <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl" loading="lazy"></i>
+              <i class="not-md:hidden fa-brands fa-whatsapp text-md lg:text-xl" ></i>
               WhatsApp
             </a>
           </div>
         </div>
     
     </section>
-
-    <include src="partials/footer.html"></include>
-
-  </body>
-  <script type="module" src="/src/scripts/main.ts"></script>
-</html>
-
-  <!-- TODOS -->
-<!-- !!! schimba culoare iconita comunicare  -->
-<!-- improve ui/ux for conversions -->
+</MainLayout>

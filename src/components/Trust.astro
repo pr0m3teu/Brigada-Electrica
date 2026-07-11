@@ -1,10 +1,15 @@
+---
+import shieldSvg from "../assets/svg/shield.svg" 
+import locationSvg from "../assets/svg/location.svg"
+---
+
 <section class="bg-main-blue text-main-white flex justify-center-safe py-4 h-fit border-b-4 border-main-gold">
       <div class="mx-3 text-md flex"> 
-        <img src="./assets/svg/shield.svg" alt="scut" class="mr-0.5">
+          <img src={shieldSvg.src} alt="scut" loading={"eager"} class="mr-0.5"/>
         <p>Autorizat ANRE</p>
       </div>
       <div class="mx-3 text-md flex">
-        <img src="./assets/svg/location.svg" alt="locație" class="mr-0.5">
+        <img src={locationSvg.src} alt="locație" loading={"eager"} class="mr-0.5"/>
         <p>Intervenții în tot Iașiul</p>
       </div>
 </section>
