@@ -76,10 +76,10 @@ a:link, a:visited, a:hover, a:active {
     /* --- This is the new default state --- */
     translate: 0 -100%; /* Start 100% off-screen to the left */
     transition: translate var(--animation-timing);
-
+    height: 100vh;
     padding: 0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: rgba(36, 72, 117, 0.98); /* #244875 */
+    background-color: #0c1827;
     color: #F9FAFB;
     width: 100vw;
 
