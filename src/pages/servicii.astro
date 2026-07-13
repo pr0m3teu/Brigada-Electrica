@@ -1,11 +1,65 @@
 ---
+import "../styles/global.css"
+
 import MainLayout from "../layouts/MainLayout.astro"
 import Trust from "../components/Trust.astro"
-import "../styles/global.css"
 import { Image } from "astro:assets"
 import phonePng from "../assets/png/phone.png"
+import homePng from  "../assets/png/house.png"
+import companyPng from "../assets/png/company.png"
+import boltSvg from "../assets/svg/bolt.svg"
+import lightBulbSvg from "../assets/svg/lighbulb.svg"
+
+import smarthomePng from  "../assets/png/smart-home-gold.png"
+
+type Serviciu = {
+  image: ImageMetadata,
+  title: string,
+  description: string,
+  href: string
+
+}
 
 const pageDescription = "Servicii complete de electrician în Iași: instalații electrice noi, reparații tablouri electrice, mentenanță și case inteligente. Cere ofertă gratuită.";
+
+const servicii: Serviciu[] = [
+  {
+    image: homePng,
+    title: "Instalații electrice rezidențiale",
+    description: "Cablare completă, tablouri electrice modernizate și prize/circuite dedicate pentru case și apartamente." ,
+    href: "#instalatii-electrice",
+  },
+  {
+    image: companyPng,
+    title: "Instalații comerciale & industriale",
+    description: "Proiectare și execuție pentru spații comerciale, birouri și hale, cu documentație completă pentru recepție.",
+    href: "#instalatii-electrice",
+  },
+  {
+    image: smarthomePng,
+    title: "Automatizări porți & garaje",
+    description: "Motorizare porți batante și culisante, telecomenzi, control acces de la distanță și integrare cu telefonul.",
+    href: "#case-inteligente",
+  },
+  {
+    image: smarthomePng,
+    title: "Case inteligente (Smart Home)",
+    description: "Iluminat, termostate, senzori de securitate și electrocasnice controlate dintr-o singură aplicație.",
+    href: "#case-inteligente",
+  },
+  {
+    image: boltSvg,
+    title: "Reparații & depanări",
+    description: "Localizare rapidă a defectelor, intervenții la scurtcircuite, întreruperi de curent și defecțiuni de tablou.",
+    href: "#instalatii-electrice",
+  },
+  {
+    image: lightBulbSvg,
+    title: "Mentenanță periodică",
+    description: "Contracte de mentenanță pentru case și firme: verificări, revizii și rapoarte de conformitate.",
+    href: "#instalatii-electrice",
+  },
+]
 
 ---
 
@@ -29,6 +83,30 @@ const pageDescription = "Servicii complete de electrician în Iași: instalații
     </section>
 
     <Trust/>
+
+    <section class="bg-main-blue px-6 lg:px-16 py-8 text-main-white">
+      <p class="uppercase text-secondary-blue text-center lg:text-left font-light lg:text-sm mb-3">Ce facem</p>
+      <h2 class="font-semibold text-3xl mb-10">Servicii complete, de la un capăt de cablu la o casă întreagă</h2>
+
+      <div class="grid lg:grid-cols-3 gap-8 lg:gap-4">
+        {
+          servicii.map((serviciu) => (
+            <div class="group px-6 py-4 rounded-xl relative duration-50 transition-all border
+             border-main-blue hover:-translate-y-1 hover:border-main-gold hover:bg-main-blue-800/60">
+              <Image src={serviciu.image} width={32} loading="lazy" alt="smart-home" class="mb-3 "/>
+              <p class="font-medium text-xl mb-2">{ serviciu.title }</p>
+              <p class="text-gray-300">{ serviciu.description }</p>
+              <a href={serviciu.href} class="inline-flex items-center gap-1 text-main-gold text-sm font-medium mt-4 lg:opacity-0 group-hover:opacity-100 transition-opacity">
+                Află mai multe
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+            
+            ))
+        }
+      </div>
+
+    </section>
 
     <main id="serivicii-description" class="my-10  bg-main-white rounded-2xl">
       
@@ -56,7 +134,7 @@ const pageDescription = "Servicii complete de electrician în Iași: instalații
         <a href="tel:+40740543785" class="servici-cta bg-main-blue-800 hover:bg-main-blue-700">Sună pentru urgențe →</a>
       </div>
     
-      <div class="bg-[#EEEFEA] servici-section">
+      <div id="instalatii-electrice" class="scroll-m-16 bg-[#EEEFEA] servici-section">
         <h3 class="servici-title">Instalații Electrice Complete</h3>
         <p class="servici-description">
           Realizăm instalația electrică de la zero sau o modernizăm complet, 
@@ -101,7 +179,7 @@ const pageDescription = "Servicii complete de electrician în Iași: instalații
         <a href="tel:+40740543785" class="servici-cta bg-main-blue-800 hover:bg-main-blue-700">Sună pentru urgențe →</a>
       </div>
 
-      <div class="servici-section bg-main-blue-800">
+      <div id="case-inteligente" class="scroll-m-16 servici-section bg-main-blue-800">
         <h3 class="servici-title text-main-white">Case Inteligente</h3>
         <p class="servici-description text-gray-300">
           Transformăm locuința ta într-un spațiu inteligent: 

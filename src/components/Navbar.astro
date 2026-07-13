@@ -36,7 +36,7 @@ import { Image } from "astro:assets";
     <nav class="bg-main-blue nav-mobile flex md:hidden px-4 py-3.5 justify-between items-center">
     <a href="/" class="link">
         <div class="flex items-center">
-        <Image id="nav-logo" class="w-10 h-full" fetchpriority="high" src={Logo} alt="logo"/>
+        <Image id="nav-logo" class="w-10 h-full" fetchpriority="high" loading="eager" src={Logo} alt="logo"/>
         <h2 class="text-xl text-main-white font-bold ml-1.5 cursor-pointer">Brigada Electrică</h2>
         </div>
     </a>
